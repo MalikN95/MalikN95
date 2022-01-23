@@ -86,8 +86,11 @@
 .catalog-wrapper{
     display: flex;
     justify-content: space-between;
-    .catalog-filter{
+    .left-menu{
         width: 23%;
+    }
+    .catalog-filter{
+        width: 100%;
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         padding: 30px;
@@ -161,9 +164,61 @@
             }
         }
     }
+    .catalog-info{
+        width: 100%;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 40px;
+        .catalog-info__accordion_section{
+            display: flex;
+            flex-direction: column;
+            a, p{
+                font-size: 14px;
+                color: $black;
+                margin-bottom: 10px;
+            }
+
+        }
+        .accordion {
+            color: $black;
+            padding: 10px 0;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+        }
+        .active{
+            color: $bl-green;
+            font-weight: 600;
+            transition: .2s;
+        }
+        .accordion:after {
+            content: url(/assets/images/icons/footer-arrow.svg);
+            font-size: 20px;
+            color: $black;
+            float: right;
+            margin-left: 5px;
+            transition: .3s;
+            transform: translateY(-5px);
+        }
+          
+        .active:after {
+            content: url(/assets/images/icons/catalog-green-arr.svg);
+            transform: rotateZ(-180deg) ;
+        }
+        .panel {
+            display: none;
+            overflow: hidden;
+            background: none;
+        }
+    }
     .catalog-cards{
         width: 76%;
         display: flex;
         flex-wrap: wrap;
+        .item__card{
+            max-height: 410px;
+        }
     }
 }

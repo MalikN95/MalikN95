@@ -107,20 +107,17 @@
                     outline: none;
                     transition: 0.4s;
                 }
-                .active, .accordion:hover {
-                   
-                }
                 .accordion:after {
                     content: url(/assets/images/icons/footer-arrow.svg);
                     font-size: 20px;
                     color: $black;
                     float: right;
                     margin-left: 5px;
+                    transition: .3s;
                 }
                   
                 .active:after {
-                    content: url(/assets/images/icons/footer-arrow.svg);
-                    transform: rotateZ(180deg);
+                    transform: rotateZ(-180deg) translateY(-5px);
                 }
                 .panel {
                     display: none;

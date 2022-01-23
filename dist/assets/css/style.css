@@ -752,10 +752,10 @@ button {
       font-size: 20px;
       color: #1E1E1E;
       float: right;
-      margin-left: 5px; }
+      margin-left: 5px;
+      transition: .3s; }
     .footer .footer-mob-content .footer-mob-section .footer-mob__accordion .active:after {
-      content: url(/assets/images/icons/footer-arrow.svg);
-      transform: rotateZ(180deg); }
+      transform: rotateZ(-180deg) translateY(-5px); }
     .footer .footer-mob-content .footer-mob-section .footer-mob__accordion .panel {
       display: none;
       overflow: hidden;
@@ -1069,8 +1069,10 @@ button {
 .catalog-wrapper {
   display: flex;
   justify-content: space-between; }
+  .catalog-wrapper .left-menu {
+    width: 23%; }
   .catalog-wrapper .catalog-filter {
-    width: 23%;
+    width: 100%;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 30px;
@@ -1129,10 +1131,51 @@ button {
       transition: .3s; }
       .catalog-wrapper .catalog-filter .catalog-filter__resset-btn:hover {
         background: #009245; }
+  .catalog-wrapper .catalog-info {
+    width: 100%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px; }
+    .catalog-wrapper .catalog-info .catalog-info__accordion_section {
+      display: flex;
+      flex-direction: column; }
+      .catalog-wrapper .catalog-info .catalog-info__accordion_section a, .catalog-wrapper .catalog-info .catalog-info__accordion_section p {
+        font-size: 14px;
+        color: #1E1E1E;
+        margin-bottom: 10px; }
+    .catalog-wrapper .catalog-info .accordion {
+      color: #1E1E1E;
+      padding: 10px 0;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      transition: 0.4s; }
+    .catalog-wrapper .catalog-info .active {
+      color: #009245;
+      font-weight: 600;
+      transition: .2s; }
+    .catalog-wrapper .catalog-info .accordion:after {
+      content: url(/assets/images/icons/footer-arrow.svg);
+      font-size: 20px;
+      color: #1E1E1E;
+      float: right;
+      margin-left: 5px;
+      transition: .3s;
+      transform: translateY(-5px); }
+    .catalog-wrapper .catalog-info .active:after {
+      content: url(/assets/images/icons/catalog-green-arr.svg);
+      transform: rotateZ(-180deg); }
+    .catalog-wrapper .catalog-info .panel {
+      display: none;
+      overflow: hidden;
+      background: none; }
   .catalog-wrapper .catalog-cards {
     width: 76%;
     display: flex;
     flex-wrap: wrap; }
+    .catalog-wrapper .catalog-cards .item__card {
+      max-height: 410px; }
 
 /* Sliders */
 /* Aos */
