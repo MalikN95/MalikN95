@@ -1,0 +1,38 @@
+@mixin icon($image, $width, $height) {
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    size: 100% 100%;
+  }
+
+  display: flex;
+  align-items: center;
+  width: $width;
+  height: $height;
+}
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($path + ".woff") format("woff"), url($path + ".woff2") format("woff2");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../../fonts/#{$file_name}.woff") format("woff"), url("../../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@mixin font-awesome($content, $weight) {
+  font-family: "Font Awesome 5 Free";
+  content: $content;
+  font-weight: $weight;
+}

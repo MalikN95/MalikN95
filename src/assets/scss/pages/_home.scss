@@ -1,0 +1,111 @@
+.wrapper{
+    margin-bottom: 50px;
+}
+.wrapper-slider{
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    @include mobile{
+        height: 230px;
+    }
+    .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        background-color: #E3E3E3;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: $green;
+        box-shadow: none;
+        transform: scale(1);
+    }
+
+}
+
+.why{
+    margin-top: 100px;
+    background-color: $green;
+    padding: 70px 0;
+    @include mobile{
+        margin-top: 60px;
+    }
+    .why-content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .why-card{
+        width: 260px;
+        color: $white;
+        text-align: center;
+        @include mobile{
+            width: 50%;
+        }
+        .card-img{
+            width: 100px;
+            margin: 0 auto;
+        }
+        .card-header{
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 23px;
+        }
+        .card-text{
+            font-size: 14px;
+            margin-top: 13px;
+            font-weight: 400;
+        }
+    }  
+}
+.popular-item{
+    margin-top: 120px;
+    @include mobile{
+        margin-top: 60px;
+    }
+    .all-item{
+        font-weight: 600;
+        color: $lt-green;
+        float: right;
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .popular-item__slider{
+        padding: 50px 0;
+        overflow: hidden;
+        @include mobile{
+            width: 80%;
+            overflow: visible;
+        }
+    }
+
+}
+.recommended-item{
+    margin-top: 120px;
+    @include mobile{
+        margin-top: 60px;
+    }
+    .item__card{
+        margin-top: 40px;
+    }
+    .recomended-item__slider{
+        padding: 50px 0;
+        overflow: hidden;
+        @include mobile{
+            width: 80%;
+            overflow: visible;
+        }
+    }
+    .desctop-item{
+        @include mobile{
+            display: none;
+        }
+    }
+    .mob-slider{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+}

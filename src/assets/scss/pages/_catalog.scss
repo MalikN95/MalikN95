@@ -1,0 +1,24 @@
+.catalog{
+    .sort-category{
+        display: flex;
+        p{
+            font-size: 14px;
+            color: $black;
+            margin-bottom: 0;
+        }
+        .category{
+            outline: none;
+            border: none;
+            color: $lt-green;
+            font-size: 14px;
+            font-weight: 600;
+            option{
+                border: none;
+                font-size: 14px;
+                font-weight: 600;
+ 
+            }
+        }
+        
+    }
+}

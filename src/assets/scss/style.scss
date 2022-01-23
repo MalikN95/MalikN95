@@ -1,0 +1,29 @@
+/* Helpers */
+@import "variables";
+@import "helpers/mixins";
+@import "helpers/media-query";
+
+/* Template */
+@import "common/fonts";
+@import "common/preloader";
+@import "common/buttons";
+@import "common/form";
+@import "template";
+@import "classes";
+
+/* Sections for all pages */
+@import "sections/header";
+@import "sections/footer";
+@import "sections/promotion";
+@import "sections/fabric-info";
+@import "sections/choice";
+
+/* Pages */
+@import "pages/home";
+@import "pages/catalog";
+
+/* Sliders */
+@import "common/sliders";
+
+/* Aos */
+@import "libs/swiperjs";

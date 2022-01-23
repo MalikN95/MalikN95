@@ -1,0 +1,35 @@
+{
+    "name": "CameronClass",
+    "version": "1.0.0",
+    "description": "Cameron Class GULP",
+    "author": "Cameron Class",
+    "devDependencies": {
+        "browser-sync": "^2.26.13",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-cssbeautify": "^3.0.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-file-include": "^2.2.2",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-pretty-html": "^2.0.10",
+        "gulp-sass": "^4.1.0",
+        "gulp-strip-css-comments": "^2.0.0",
+        "gulp-ttf2woff": "^1.1.1",
+        "gulp-ttf2woff2": "^3.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-uglify-es": "^2.0.0",
+        "panini": "^1.7.1"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "IE 10"
+    ],
+    "dependencies": {
+        "gulp-cli": "^2.3.0",
+        "gulp-update": "^0.0.2"
+    }
+}
