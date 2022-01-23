@@ -1066,6 +1066,74 @@ button {
   opacity: 0;
   cursor: pointer; }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between; }
+  .catalog-wrapper .catalog-filter {
+    width: 23%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 10px; }
+    .catalog-wrapper .catalog-filter .catalog-filter__item {
+      margin-top: 40px; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filter__item_title {
+        font-weight: 600;
+        font-size: 17px; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filtr__item_check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filtr__item_check:last-child {
+        margin-bottom: 0; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filtr__item_check span {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1E1E1E;
+        padding-left: 8px; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item input {
+        width: 16px;
+        height: 16px; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 2px;
+        border: 1px solid #C7C7C7;
+        min-width: 16px;
+        height: 16px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .checkbox::before {
+        content: url(/assets/images/icons/checkbox.svg);
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        opacity: 0;
+        transition: 0.1s ease-in; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .checkbox:checked {
+        border: 1px solid #219653; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item .checkbox:checked::before {
+        opacity: 1; }
+    .catalog-wrapper .catalog-filter .catalog-filter__resset-btn {
+      margin-top: 50px;
+      padding: 15px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 5px;
+      background: #219653;
+      transition: .3s; }
+      .catalog-wrapper .catalog-filter .catalog-filter__resset-btn:hover {
+        background: #009245; }
+  .catalog-wrapper .catalog-cards {
+    width: 76%;
+    display: flex;
+    flex-wrap: wrap; }
+
 /* Sliders */
 /* Aos */
 /**
