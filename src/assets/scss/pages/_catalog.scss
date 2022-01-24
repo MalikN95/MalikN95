@@ -1,6 +1,7 @@
 .catalog{
     .sort-category{
         display: flex;
+        justify-content: flex-end;
         @include mobile{
             margin-bottom: 35px;
         }

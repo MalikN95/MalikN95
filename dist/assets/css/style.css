@@ -852,12 +852,12 @@ button {
         .fabric-info .info-card .info-card__text {
           width: 100%; } }
     .fabric-info .info-card .info-card__img {
-      width: 69%;
-      margin-top: 10px; }
+      width: 69%; }
       @media screen and (max-width: 576px) {
         .fabric-info .info-card .info-card__img {
           width: 100%;
-          height: 230px; } }
+          height: 230px;
+          margin-top: 10px; } }
       .fabric-info .info-card .info-card__img img {
         object-fit: cover;
         object-position: center center;
@@ -995,7 +995,8 @@ button {
         display: block; } }
 
 .catalog .sort-category {
-  display: flex; }
+  display: flex;
+  justify-content: flex-end; }
   @media screen and (max-width: 576px) {
     .catalog .sort-category {
       margin-bottom: 35px; } }
