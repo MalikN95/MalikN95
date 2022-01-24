@@ -1,0 +1,211 @@
+.item{
+
+    .item-card{
+        display: flex;
+        justify-content: space-between;
+        .item-card__img{
+            width: 48%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 70%;
+            }
+
+        }
+        .item-card-info{
+            width: 48%;
+            .item-artiqle{
+                font-weight: 500;
+                font-size: 14px;
+                color: #ACADC0;
+                margin-bottom: 20px;
+            }
+            .item-name{
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+            .item-rating{
+                display: flex;
+                margin-bottom: 35px;
+                .rating-stars{
+                    display: flex;
+                    margin-right: 18px;
+                    img{
+                        width: 16px;
+                        margin-right: 5px;
+                    }
+                }
+                .rating-review{
+                    a{
+                        color: #ACADC0;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .item-price{
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 36px;
+            }
+            .item-status{
+                font-weight: 500;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .available{
+                color: $lt-green;
+            }
+            .item-delivery{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .item-buy{
+                margin-top: 35px;
+                display: flex;
+                .trash{
+                    color: $white;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    background-color: $green;
+                    padding: 15px;
+                    width: 220px;
+                    margin-right: 30px;
+                    border: 1px solid $green;
+                    transition: .3s;
+                    &:hover{
+                        border: 1px solid $green;
+                        background-color: $white;
+                        color: $green;
+                    }
+                }
+                .item-num{
+                    width: 130px;
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    padding: 0 15px;
+                    button{
+                        color: $green;
+                        font-size: 30px;
+                    }
+                    input{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .item-info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 170px;
+        .item-info__tabs{
+            width: 60%;
+            .tab-buttons{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #E3E3E3;
+            }
+            .tabs-button{
+                padding-bottom: 20px;
+                color: #C4C4C4;
+                font-size: 17px;
+                font-weight: 400;
+                transition: .1s;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    border-bottom: 2px solid #C4C4C4;
+                }
+            }
+            .button-ative{
+                border-bottom: 2px solid $green;
+                color: $green;
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .item-specifications{
+                ul{
+                    
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #E3E3E3;
+                        p{
+                            padding: 20px;
+                            margin: 0;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .item-discription{
+                margin-top: 20px;
+
+                .item-discription__name{
+                    font-weight: 600;
+                }
+            }
+            .tab-title{
+                font-weight: 600;
+                margin-top: 20px;
+            }
+            .delivery-time{
+                font-weight: 600;
+            }
+            .item-review{
+                .review-card{
+                    margin-top: 50px;
+                }
+                .review-item__autor{
+                    display: flex;
+                    .review-item__autor-img{
+                        width: 55px;
+                    }
+                    .review-item__autor-info{
+                        margin-left: 20px;
+                        .review-item__autot-name{
+                            margin: 0;
+                            font-weight: 600;
+                        }
+                        .review-item__autor-date{
+                            margin-left: 10px;
+                            font-size: 12px;
+                            color: #C4C4C4;
+                        }
+                    }
+                    .card-stars{
+                        margin-top: 10px;
+                    }
+                }
+                .review-item-text{
+                    .text-title{
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin: 20px 0 10px;
+                    }
+
+                }
+            }
+        }
+        .tab-content{
+            display: none;
+        }
+        .tab-active__content{
+            display: block;
+        }
+        .item-info__img{
+            width: 30%;
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}

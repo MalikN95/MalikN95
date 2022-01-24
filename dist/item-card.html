@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <!-- MetaTags -->
+    <meta name="description" content="Description of the page less than 150 characters">
+    <meta name="keywords" content="KeyWords">
+    <!-- OG tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:title" content="Content Title">
+    <meta property="og:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Site Name">
+    <meta name="twitter:description" content="Description Here">
+    <meta name="twitter:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+    <!-- Favivon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- Mobiles Header Color -->
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Карточка товара</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header__left">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header-catalog">
+                        <a class="catalog-link" href="catalog.html">Каталог</a>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header-top">
+                        <div class="header-menu">
+                            <div class="header-menu__top">
+                                <a class="header__map" href="https://www.google.com.ru/maps">г. Москва, ул. Стародубова 19</a>
+                                <a class="header__tel" href="tel:+74957661619">+7 (495) 766-16-19</a>
+                                <div class="header__social">
+                                    <a href="#">
+                                        <img src="assets/images/header__social_wa.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/header__social_vk.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/header__social_tg.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="header__order">
+                                    <div class="order__trash">
+                                        <a href="trash.html"><img class="order__trash_img" src="assets/images/header__trash.svg" alt=""></a>
+                                        <p class="order__text">Корзина пуста</p>
+                                    </div>
+                                    <a href="#" class="order__calculate">
+                                        Калькулятор расчета
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="heder__nav-bar">
+                                <ul>
+                                    <li class="menu-item"><a href="about.html">О нас</a></li>
+                                    <li class="menu-item"><a href="about.html">Бани на заказ</a></li>
+                                    <li class="menu-item"><a href="partner.html">Партнерам</a></li>
+                                    <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-bottom">
+                        <div class="search">
+                            <input type="text" class="serch" placeholder="Введите поисковый запрос">
+                            <a href="#"><img src="assets/images/header__search.svg" alt=""></a>
+                        </div>
+                        <div class="header__elem">
+                            <div class="favorit">
+                                <a href="#"><img src="assets/images/header__favorit.svg" alt=""></a>
+                                <p>Избранное</p>
+                            </div>
+                            <div class="comparison">
+                                <a href="#"><img src="assets/images/header__comparison.svg" alt=""></a>
+                                <p>Сравнение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-mobile">
+            <div class="header-top">
+                <div class="burger-menu">
+                    <input type="checkbox" id="menu-toggle" />
+                    <label id="trigger" for="menu-toggle"></label>
+                    <label id="burger" for="menu-toggle"></label>
+                    <ul id="menu">
+                        <li class="menu-item"><a href="about.html">О нас</a></li>
+                        <li class="menu-item"><a href="about.html">Бани на заказ</a></li>
+                        <li class="menu-item"><a href="partner.html">Партнерам</a></li>
+                        <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header__social">
+                    <a href="#"><img src="assets/images/icons/mob-soc1.svg" alt=""></a>
+                    <a href="#"><img src="assets/images/icons/mob-soc2.svg" alt=""></a>
+                    <a href="#"><img src="assets/images/icons/mob-soc3.svg" alt=""></a>
+                </div>
+                <div class="trash">
+                    <a href="#">
+                        <img src="assets/images/icons/mob-trash.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header-center">
+                    <div class="center-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="center-menu">
+                        <div class="center-menu__catalog">
+                            <a href="catalog.html">Каталог</a>
+                        </div>
+                        <div class="center-menu__calc">
+                            <a href="catalog.html">Каталог</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="search">
+                        <input type="text" class="serch" placeholder="Введите поисковый запрос">
+                        <a href="#"><img src="assets/images/header__search.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Пиломатериалы</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>Доска обрезная</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="item">
+        <div class="container">
+            <div class="item-card">
+                <div class="item-card__img">
+                    <img src="assets/images/item-card-img.jpg" alt="">
+                </div>
+                <div class="item-card-info">
+                    <p class="item-artiqle">
+                        Артикул: <span>55091921</span>
+                    </p>
+                    <h3 class="item-name">
+                        Фанера ФК 3 мм 1525х1525, сорт 4/4, нешлифованная, берёза
+                    </h3>
+                    <div class="item-rating">
+                        <div class="rating-stars">
+                            <img src="assets/images/icons/card-star.svg" alt="">
+                            <img src="assets/images/icons/card-star.svg" alt="">
+                            <img src="assets/images/icons/card-star.svg" alt="">
+                            <img src="assets/images/icons/card-star.svg" alt="">
+                            <img src="assets/images/icons/card-star-gr.svg" alt="">
+                        </div>
+                        <div class="rating-review">
+                            <a href="#">
+                                <span>4</span> отзыва
+                            </a>
+                        </div>
+                    </div>
+                    <p class="item-price">
+                        от <span>17 348.74</span> ₽
+                    </p>
+                    <p class="item-status available">
+                        Есть в наличии
+                    </p>
+                    <p class="item-delivery">
+                        Доставка: 15-17 ноября
+                    </p>
+                    <div class="item-buy">
+                        <button class="trash">
+                            Добавить в корзину
+                        </button>
+                        <div class="item-num">
+                            <button class="add">-</button>
+                            <input type="text" value="1">
+                            <button class="remove">+</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="item-info__tabs">
+                    <div class="tab-buttons">
+                        <button class="tabs-button button-ative">Характеристики</button>
+                        <button class="tabs-button">Описание</button>
+                        <button class="tabs-button">Доставка и оплата</button>
+                        <button class="tabs-button">Отзывы</button>
+                    </div>
+                    <div class="tab-content tab-active__content">
+                        <div class="item-specifications">
+                            <ul>
+                                <li>
+                                    <p class="property">Порода древисины</p>
+                                    <p class="value">Сосна, ель</p>
+                                </li>
+                                <li>
+                                    <p class="property">Сорт</p>
+                                    <p class="value">A</p>
+                                </li>
+                                <li>
+                                    <p class="property">Влажность продукции</p>
+                                    <p class="value">8-10% </p>
+                                </li>
+                                <li>
+                                    <p class="property">Упаковка продукции</p>
+                                    <p class="value">Термоусадочная пленка</p>
+                                </li>
+                                <li>
+                                    <p class="property">Количество в упаковке</p>
+                                    <p class="value">7</p>
+                                </li>
+                                <li>
+                                    <p class="property">Высота х Ширина х Длина</p>
+                                    <p class="value">20 х 96 х 6000</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="item-discription">
+                            <h3 class="item-discription__title tab-title">
+                                Описание
+                            </h3>
+                            <p class="item-discription__name">
+                                Фанера ФК 3 мм 1525х1525, сорт 4/4, нешлифованная, берёза
+                            </p>
+                            <p class="item-discription__text">
+                                В ее тамбуре достаточно места для хранения туристического снаряжения. Практичные карманы во внутренней палатке предназначены для вещей, которые должны быть всегда под рукой, а точка крепления для фонаря дополняет комфорт. Регулируемая система вентиляции способствует притоку свежего воздуха в палатку, чтобы Вы могли хорошо выспаться. Дверь во внутреннюю палатку имеет окно из москитной сетки, надежно защищая от назойливых насекомых. Все швы герметично проклеены специальной лентой, гарантируя защиту от проникновения влаги в дождливую погоду.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="item-delivery">
+                            <h3 class="item-delivery__title tab-title">
+                                Доставка
+                            </h3>
+                            <p class="delivery-time">
+                                Доставка: 15-17 ноября
+                            </p>
+                            <p>
+                                Условия доставки: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita mollitia natus ipsum dolore vero adipisci non obcaecati debitis, molestias aut illo. Hic quam temporibus autem nobis eum maxime inventore delectus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="item-review">
+                            <h3 class="item-review__title tab-title">
+                                Отзывы
+                            </h3>
+                            <div class="review-card">
+                                <div class="review-item__autor">
+                                    <div class="review-item__autor-img">
+                                        <img src="assets/images/icons/autor-img.svg" alt="">
+                                    </div>
+                                    <div class="review-item__autor-info">
+                                        <p class="review-item__autot-name">Александр
+                                            <span class="review-item__autor-date">23.01.2022</span>
+                                        </p>
+                                        <div class="card-stars">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star-gr.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="review-item-text">
+                                    <h3 class="text-title">
+                                        Достоинства
+                                    </h3>
+                                    <div class="text-content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel magni labore totam corporis quaerat veniam repudiandae assumenda eligendi officia nisi, porro autem accusantium! Obcaecati unde expedita impedit mollitia voluptas!
+                                    </div>
+                                    <h3 class="text-title">
+                                        Недостатки
+                                    </h3>
+                                    <div class="text-content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel magni labore totam corporis quaerat veniam repudiandae assumenda eligendi officia nisi, porro autem accusantium! Obcaecati unde expedita impedit mollitia voluptas!
+                                    </div>
+                                    <h3 class="text-title">
+                                        Комментарий
+                                    </h3>
+                                    <div class="text-content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel magni labore totam corporis quaerat veniam repudiandae assumenda eligendi officia nisi, porro autem accusantium! Obcaecati unde expedita impedit mollitia voluptas!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-item__autor">
+                                    <div class="review-item__autor-img">
+                                        <img src="assets/images/icons/autor-img.svg" alt="">
+                                    </div>
+                                    <div class="review-item__autor-info">
+                                        <p class="review-item__autot-name">Александр
+                                            <span class="review-item__autor-date">23.01.2022</span>
+                                        </p>
+                                        <div class="card-stars">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star.svg" alt="">
+                                            <img src="assets/images/icons/card-star-gr.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="review-item-text">
+                                    <h3 class="text-title">
+                                        Достоинства
+                                    </h3>
+                                    <div class="text-content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel magni labore totam corporis quaerat veniam repudiandae assumenda eligendi officia nisi, porro autem accusantium! Obcaecati unde expedita impedit mollitia voluptas!
+                                    </div>
+                                    <h3 class="text-title">
+                                        Недостатки
+                                    </h3>
+                                    <div class="text-content">
+                                        Нету
+                                    </div>
+                                    <h3 class="text-title">
+                                        Комментарий
+                                    </h3>
+                                    <div class="text-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, expedita minus libero fuga id rem itaque, dicta necessitatibus illo explicabo est velit qui ab? Eligendi eum in ducimus dolorum velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel magni labore totam corporis quaerat veniam repudiandae assumenda eligendi officia nisi, porro autem accusantium! Obcaecati unde expedita impedit mollitia voluptas!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info__img">
+                    <img src="/assets/images/choice-img-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer-section">
+                    <h3 class="section-header">
+                        Покупателям
+                    </h3>
+                    <a class="section-link" href="#">Акции</a>
+                    <a class="section-link" href="#">Скидки</a>
+                    <a class="section-link" href="#">Возврат товара</a>
+                    <a class="section-link" href="#">Способы оплаты</a>
+                    <a class="section-link" href="#">Для юридических лиц</a>
+                    <a class="section-link" href="#">Зарегестрировать карту</a>
+                    <a class="section-link" href="#">Подарочные сертификаты</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="section-header">
+                        Услуги
+                    </h3>
+                    <a class="section-link" href="#">Доставка и подъем</a>
+                    <a class="section-link" href="#">Самовывоз</a>
+                    <a class="section-link" href="#">Распил</a>
+                    <a class="section-link" href="#">Прокат инструмента</a>
+                    <a class="section-link" href="#">Расчет материалов</a>
+                    <a class="section-link" href="#">Установка дверей</a>
+                </div>
+                <div class="footer-section__contact t-transform">
+                    <h3 class="section-header">
+                        НАШ АДРЕС
+                    </h3>
+                    <a class="section-link" href="#">г. Москва, ул. Стародубова 19</a>
+                    <h3 class="section-header t-transform">
+                        Время работы
+                    </h3>
+                    <p>Пн-пт 09:00-18:00</p>
+                    <h3 class="section-header t-transform">
+                        CЛУЖБА ПОДДЕРЖКИ
+                    </h3>
+                    <a class="section-link" href="mailto:service.drevoteka@.ru">service.drevoteka@.ru</a>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="assets/images/header__social_wa.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/header__social_vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/header__social_tg.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-mob-content">
+                    <div class="footer-mob-section">
+                        <div class="footer-mob__accordion">
+                            <button class="accordion section-header">Покупателям</button>
+                            <div class="panel">
+                                <div class="footer__section ">
+                                    <a class="section-link" href="#">Акции</a>
+                                    <a class="section-link" href="#">Скидки</a>
+                                    <a class="section-link" href="#">Возврат товара</a>
+                                    <a class="section-link" href="#">Способы оплаты</a>
+                                    <a class="section-link" href="#">Для юридических лиц</a>
+                                    <a class="section-link" href="#">Зарегестрировать карту</a>
+                                    <a class="section-link" href="#">Подарочные сертификаты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mob-section">
+                        <div class="footer-mob__accordion">
+                            <button class="accordion section-header">Услуги</button>
+                            <div class="panel">
+                                <div class="footer__section ">
+                                    <a class="section-link" href="#">Доставка и подъем</a>
+                                    <a class="section-link" href="#">Самовывоз</a>
+                                    <a class="section-link" href="#">Распил</a>
+                                    <a class="section-link" href="#">Прокат инструмента</a>
+                                    <a class="section-link" href="#">Расчет материалов</a>
+                                    <a class="section-link" href="#">Установка дверей</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section t-transform ">
+                        <h3 class="section-header">
+                            НАШ АДРЕС
+                        </h3>
+                        <a class="section-link" href="#">г. Москва, ул. Стародубова 19</a>
+                        <h3 class="section-header t-transform">
+                            Время работы
+                        </h3>
+                        <p>Пн-пт 09:00-18:00</p>
+                        <h3 class="section-header t-transform">
+                            CЛУЖБА ПОДДЕРЖКИ
+                        </h3>
+                        <a class="section-link" href="mailto:service.drevoteka@.ru">service.drevoteka@.ru</a>
+                        <div class="footer-social">
+                            <a href="#">
+                                <img src="assets/images/header__social_wa.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/header__social_vk.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/header__social_tg.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-copyright">
+                <hr>
+                <div class="copyright-text">
+                    © 2004–2021 РосЛесСнаб
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

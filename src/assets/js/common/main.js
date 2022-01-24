@@ -85,8 +85,17 @@ $(document).ready(function () {
       });
     }
   };
+  
   $('.catalog-category__item').on('click', function () {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   });
+
+  $('.tabs-button').each(function(index){
+    $(this).on('click', function(){
+      $('.tabs-button').removeClass('button-ative');
+      $(this).addClass('button-ative')
+      $('.tab-content').removeClass('tab-active__content').eq(index).addClass('tab-active__content')
+    })
+  })
 });
