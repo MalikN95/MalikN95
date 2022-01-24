@@ -1,0 +1,28 @@
+.recommended-item{
+    margin-top: 120px;
+    @include mobile{
+        margin-top: 60px;
+    }
+    .item__card{
+        margin-top: 40px;
+    }
+    .recomended-item__slider{
+        padding: 50px 0;
+        overflow: hidden;
+        @include mobile{
+            width: 80%;
+            overflow: visible;
+        }
+    }
+    .desctop-item{
+        @include mobile{
+            display: none;
+        }
+    }
+    .mob-slider{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+}
