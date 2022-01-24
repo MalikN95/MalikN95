@@ -1331,6 +1331,53 @@ button {
     .item .item-info .item-info__img img {
       border-radius: 10px; }
 
+.contacts .contact-info .contact-info__method {
+  padding: 55px 80px 15px; }
+
+.contacts .contact-info .contact-info__method_item {
+  display: flex;
+  margin-bottom: 40px; }
+  .contacts .contact-info .contact-info__method_item .method-img {
+    width: 32px; }
+  .contacts .contact-info .contact-info__method_item .method-text {
+    margin-left: 24px; }
+    .contacts .contact-info .contact-info__method_item .method-text .method-text__title {
+      font-weight: bold;
+      font-size: 14px;
+      color: #C4C4C4;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    .contacts .contact-info .contact-info__method_item .method-text .method-text__content {
+      font-size: 14px;
+      font-weight: 400;
+      color: #1E1E1E; }
+
+.contacts .contact-info .contact-info__maps {
+  margin-top: 40px;
+  border-radius: 10px; }
+  .contacts .contact-info .contact-info__maps iframe {
+    border-radius: 10px; }
+
+.contacts .contact-info .contact-info__social {
+  padding: 25px 80px 30px;
+  margin-top: 40px; }
+  .contacts .contact-info .contact-info__social .social-title {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    text-align: center;
+    margin-bottom: 25px; }
+  .contacts .contact-info .contact-info__social .social-links {
+    display: flex;
+    justify-content: space-between; }
+  .contacts .contact-info .contact-info__social img {
+    width: 40px; }
+
+.contacts .contact-card {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px; }
+
 /* Sliders */
 /* Aos */
 /**
