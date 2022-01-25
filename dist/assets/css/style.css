@@ -1453,6 +1453,9 @@ button {
       .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range {
         width: 100%;
         margin-left: 40px; }
+        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range input {
+          padding: 0;
+          height: 1px; }
 
 /* Sliders */
 /* Aos */
