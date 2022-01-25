@@ -359,6 +359,27 @@ button {
       top: 2px;
       right: 4px; }
 
+.sort-category {
+  display: flex;
+  justify-content: flex-end; }
+  @media screen and (max-width: 576px) {
+    .sort-category {
+      margin-bottom: 35px; } }
+  .sort-category p {
+    font-size: 14px;
+    color: #1E1E1E;
+    margin-bottom: 0; }
+  .sort-category .category {
+    outline: none;
+    border: none;
+    color: #27AE60;
+    font-size: 14px;
+    font-weight: 600; }
+    .sort-category .category option {
+      border: none;
+      font-size: 14px;
+      font-weight: 600; }
+
 .position-relative {
   position: relative; }
 
@@ -995,27 +1016,6 @@ button {
       margin-top: 13px;
       font-weight: 400; }
 
-.catalog .sort-category {
-  display: flex;
-  justify-content: flex-end; }
-  @media screen and (max-width: 576px) {
-    .catalog .sort-category {
-      margin-bottom: 35px; } }
-  .catalog .sort-category p {
-    font-size: 14px;
-    color: #1E1E1E;
-    margin-bottom: 0; }
-  .catalog .sort-category .category {
-    outline: none;
-    border: none;
-    color: #27AE60;
-    font-size: 14px;
-    font-weight: 600; }
-    .catalog .sort-category .category option {
-      border: none;
-      font-size: 14px;
-      font-weight: 600; }
-
 .catalog-category .catalog-category__item {
   padding: 12px 30px;
   margin-right: 40px; }
@@ -1456,6 +1456,55 @@ button {
         .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range input {
           padding: 0;
           height: 1px; }
+
+.bath .catalog-category .catalog-category__item {
+  padding: 11px 20px;
+  margin-right: 20px; }
+
+.bath .bath-cards {
+  margin-top: 40px; }
+  .bath .bath-cards .bath-card {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 55px; }
+    .bath .bath-cards .bath-card .bath-card__img {
+      height: 200px; }
+      .bath .bath-cards .bath-card .bath-card__img img {
+        object-fit: cover; }
+    .bath .bath-cards .bath-card .bath-card__text {
+      padding: 30px; }
+      .bath .bath-cards .bath-card .bath-card__text .bath-card__title {
+        font-weight: 500;
+        font-size: 16px; }
+      .bath .bath-cards .bath-card .bath-card__text p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-bottom: 5px; }
+      .bath .bath-cards .bath-card .bath-card__text .bath-card__price {
+        display: flex;
+        justify-content: space-between;
+        margin: 18px 0; }
+        .bath .bath-cards .bath-card .bath-card__text .bath-card__price .new-price {
+          font-weight: 600;
+          font-size: 18px; }
+        .bath .bath-cards .bath-card .bath-card__text .bath-card__price .old-price {
+          font-weight: 400;
+          font-size: 14px;
+          text-decoration-line: line-through;
+          color: #ACADC0; }
+      .bath .bath-cards .bath-card .bath-card__text .bath-card__btn {
+        border: 1px solid #219653;
+        border-radius: 5px;
+        color: #219653;
+        padding: 11px;
+        text-align: center;
+        width: 100%;
+        max-width: 240px;
+        display: block; }
+        .bath .bath-cards .bath-card .bath-card__text .bath-card__btn:hover {
+          background-color: #219653;
+          color: #fff; }
 
 /* Sliders */
 /* Aos */

@@ -1,32 +1,4 @@
-.catalog{
-    .sort-category{
-        display: flex;
-        justify-content: flex-end;
-        @include mobile{
-            margin-bottom: 35px;
-        }
-        p{
-            font-size: 14px;
-            color: $black;
-            margin-bottom: 0;
-        }
-        .category{
-            outline: none;
-            border: none;
-            color: $lt-green;
-            font-size: 14px;
-            font-weight: 600;
-            option{
-                border: none;
-                font-size: 14px;
-                font-weight: 600;
- 
-            }
-        }
-        
-    }
 
-}
 .catalog-category{
     .catalog-category__item {
         padding: 12px 30px;
