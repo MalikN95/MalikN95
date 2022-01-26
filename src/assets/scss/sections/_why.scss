@@ -1,0 +1,35 @@
+.why{
+    margin-top: 100px;
+    background-color: $green;
+    padding: 70px 0;
+    @include mobile{
+        margin-top: 60px;
+    }
+    .why-content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .why-card{
+        width: 260px;
+        color: $white;
+        text-align: center;
+        @include mobile{
+            width: 50%;
+        }
+        .card-img{
+            width: 100px;
+            margin: 0 auto;
+        }
+        .card-header{
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 23px;
+        }
+        .card-text{
+            font-size: 14px;
+            margin-top: 13px;
+            font-weight: 400;
+        }
+    }  
+}
