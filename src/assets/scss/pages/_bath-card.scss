@@ -1,0 +1,169 @@
+.bath-card-section{
+    .bath-card__slider{
+
+    }
+    .bath-card__info{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 45px 75px;
+        .bath-card__title{
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .bath-card__type{
+            font-weight: 500;
+            font-size: 14px;
+            color: $lt-green;
+        }
+        .bath-card__specification{
+            margin-top: 30px;
+            .specification-text{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: block;
+                }
+                hr{
+                    width: 40%;
+                    color: #E3E3E3;
+                    border: 1px solid #E3E3E3;
+                }
+                .bath-card__price{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+            .specification-title{
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        .bath-card__btn{
+            margin: 20px auto;
+            display: block;
+            color: $white;
+            font-weight: bold;
+            background: $green;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            padding: 15px 30px;
+            border: 1px solid $green;
+            transition: .3s;
+            &:hover{
+                color: $green;
+                background-color: $white;
+            }
+        }
+    }
+    
+    .item-info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 170px;
+        .item-info__tabs{
+            width: 60%;
+            .tab-buttons{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #E3E3E3;
+            }
+            .tabs-button{
+                padding-bottom: 20px;
+                color: #C4C4C4;
+                font-size: 17px;
+                font-weight: 400;
+                transition: .1s;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    border-bottom: 2px solid #C4C4C4;
+                }
+            }
+            .button-ative{
+                border-bottom: 2px solid $green;
+                color: $green;
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .item-specifications{
+                ul{
+                    
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #E3E3E3;
+                        p{
+                            padding: 20px;
+                            margin: 0;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .item-discription{
+                margin-top: 20px;
+
+                .item-discription__name{
+                    font-weight: 600;
+                }
+            }
+            .tab-title{
+                font-weight: 600;
+                margin-top: 20px;
+            }
+            .delivery-time{
+                font-weight: 600;
+            }
+            .item-review{
+                .review-card{
+                    margin-top: 50px;
+                }
+                .review-item__autor{
+                    display: flex;
+                    .review-item__autor-img{
+                        width: 55px;
+                    }
+                    .review-item__autor-info{
+                        margin-left: 20px;
+                        .review-item__autot-name{
+                            margin: 0;
+                            font-weight: 600;
+                        }
+                        .review-item__autor-date{
+                            margin-left: 10px;
+                            font-size: 12px;
+                            color: #C4C4C4;
+                        }
+                    }
+                    .card-stars{
+                        margin-top: 10px;
+                    }
+                }
+                .review-item-text{
+                    .text-title{
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin: 20px 0 10px;
+                    }
+
+                }
+            }
+        }
+        .tab-content{
+            display: none;
+        }
+        .tab-active__content{
+            display: block;
+        }
+        .item-info__img{
+            width: 30%;
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}

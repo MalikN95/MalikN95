@@ -71,6 +71,20 @@ $(document).ready(function () {
       }
     }
   });
+
+  let aboutSwiper = new Swiper(".about-card-slider", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+
   let acc = document.querySelectorAll('.accordion')
   if(acc.length > 0){
     for(let i = 0; i<acc.length; i++){

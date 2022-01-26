@@ -1,0 +1,52 @@
+.about{
+    .about-card{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        .about-card-slider{
+            padding: 60px 80px;
+            .about-card-slider__content{
+                .abour-card__text{
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: left;
+                }
+            }
+        }
+        .about-card-img{
+
+            height: 100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .about-card-slider{
+            .swiper-pagination-bullet{
+                width: 10px;
+                height: 10px;
+                background-color: #E3E3E3;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active{
+                background-color: $green;
+                box-shadow: none;
+                transform: scale(1);
+            }
+            .swiper-button{
+                position: relative;
+                width: 200px;
+                left: 50%;
+                bottom: -20px;
+                transform: translateX(-50%);
+                z-index: 11;
+            }
+            .swiper-pagination{
+                bottom: 30px;
+            }
+            .swiper-button-prev, .swiper-button-next{
+                box-shadow: none;
+            }
+        }
+    }
+}
