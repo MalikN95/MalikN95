@@ -13,6 +13,7 @@
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+
     .popup-content{
         background-color: #fefefe;
         margin: auto;
@@ -22,11 +23,20 @@
         display: flex;
         justify-content: space-between;
         border-radius: 10px;
+        @include mobile{
+            width: 99%;
+        }
         .product-img{
             width: 25%;
+            @include mobile{
+                display: none;
+            }
         }
         .product-info{
             width: 65%;
+            @include mobile{
+                width: 100%;
+            }
             .product-info__title{
                 font-size: 28px;
                 font-weight: 700;
@@ -45,12 +55,16 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 20px;
+                @include mobile{
+                    flex-direction: column;
+                }
                 .product-info__btn_link{
                     padding: 20px 30px;
                     background-color: $lt-green;
                     border-radius: 10px;
                     color: $white;
                     transition: .3s;
+                    text-align: center;
                     &:hover{
                         background: $bl-green;
                     }
@@ -64,6 +78,9 @@
                     &:hover{
                         color: $white;
                         background: $lt-green;
+                    }
+                    @include mobile{
+                        margin-top: 20px;
                     }
                 }
             }
