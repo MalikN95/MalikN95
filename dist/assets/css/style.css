@@ -1333,6 +1333,9 @@ button {
 
 .contacts .contact-info .contact-info__method {
   padding: 55px 80px 15px; }
+  @media screen and (max-width: 576px) {
+    .contacts .contact-info .contact-info__method {
+      padding: 35px 40px; } }
 
 .contacts .contact-info .contact-info__method_item {
   display: flex;

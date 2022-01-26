@@ -3,6 +3,9 @@
     .contact-info{
         .contact-info__method{
             padding: 55px 80px 15px;
+            @include mobile{
+                padding: 35px 40px;
+            }
         }
         .contact-info__method_item{
             display: flex;
