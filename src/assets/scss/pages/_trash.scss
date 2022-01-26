@@ -1,0 +1,99 @@
+.trash{
+    .item-trash{
+        border-top: 1px solid #eee;
+        border-bottom:  1px solid #eee;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+        @include mobile{
+            flex-direction: column;
+        }
+        .item-trash__img{
+            width: 150px;
+        }
+        .item-trash__info{
+            margin-left: 40px;
+            font-size: 20px;
+            font-weight: 500;
+            width: 300px;
+            @include mobile{
+                margin: 10px 0;
+            }
+        }
+        .item-trash__number{
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin-left: 40px;
+            @include mobile{
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                margin: 0;
+            }
+            .item-trash-btn{
+                width: 30px;
+                display: block;
+                font-size: 26px;
+                font-weight: 500;
+                text-align: center;
+            }
+            .item-trash-value{
+                width: 40px;
+            }
+        }
+        .item-trash__total-price{
+            margin-left: auto;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            
+        }
+        .item-trash__del{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: gray;
+
+        }
+    }
+    .trash-total{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        .trash-total__val{
+            display: flex;
+            justify-content: space-between;
+            font-size: 22px;
+            .trash-total__val_text{
+                color: gray;
+            }
+        }
+        .trash-total__sum{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            .trash-total__sum_text{
+                color: gray;
+            }
+        }
+        .trash-total-btn{
+            padding: 20px;
+            width: 100%;
+            background: $lt-green;
+            color: $white;
+            border: 1px solid $lt-green;
+            border-radius: 5px;
+            transition: .3s;
+            font-weight: 500;
+            &:hover{
+                background: $bl-green;
+
+            }
+        }
+    }
+}

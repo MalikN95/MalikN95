@@ -1913,106 +1913,86 @@ button {
         .about-question .question-content form button:hover {
           background: #197c44; }
 
-.about .about-card {
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
-  border-radius: 10px; }
-  .about .about-card .about-card-slider {
-    padding: 60px 80px; }
-    @media screen and (max-width: 576px) {
-      .about .about-card .about-card-slider {
-        padding: 25px 25px 60px; } }
-    .about .about-card .about-card-slider .about-card-slider__content .abour-card__text {
-      font-weight: 400;
-      font-size: 16px;
-      text-align: left; }
-  .about .about-card .about-card-img {
-    height: 100%; }
-    @media screen and (max-width: 576px) {
-      .about .about-card .about-card-img {
-        height: 330px; } }
-    .about .about-card .about-card-img img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
-  .about .about-card .about-card-slider .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background-color: #E3E3E3;
-    opacity: 1; }
-  .about .about-card .about-card-slider .swiper-pagination-bullet-active {
-    background-color: #219653;
-    box-shadow: none;
-    transform: scale(1); }
-  .about .about-card .about-card-slider .swiper-button {
-    position: relative;
-    width: 200px;
-    left: 50%;
-    bottom: -20px;
-    transform: translateX(-50%);
-    z-index: 11; }
-    @media screen and (max-width: 576px) {
-      .about .about-card .about-card-slider .swiper-button {
-        display: none; } }
-  .about .about-card .about-card-slider .swiper-pagination {
-    bottom: 30px; }
-  .about .about-card .about-card-slider .swiper-button-prev, .about .about-card .about-card-slider .swiper-button-next {
-    box-shadow: none; }
+.trash .item-trash {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px; }
   @media screen and (max-width: 576px) {
-    .about .about-card .row {
-      flex-direction: column-reverse; } }
-
-.about-question {
-  margin-top: 120px; }
-  @media screen and (max-width: 576px) {
-    .about-question {
-      margin-top: 65px; } }
-  .about-question .question-content {
-    padding: 50px 80px;
-    background-image: url(/assets/images/question-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    .trash .item-trash {
+      flex-direction: column; } }
+  .trash .item-trash .item-trash__img {
+    width: 150px; }
+  .trash .item-trash .item-trash__info {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px; }
+    @media screen and (max-width: 576px) {
+      .trash .item-trash .item-trash__info {
+        margin: 10px 0; } }
+  .trash .item-trash .item-trash__number {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #eee;
     border-radius: 5px;
-    color: #fff; }
+    margin-left: 40px; }
     @media screen and (max-width: 576px) {
-      .about-question .question-content {
-        padding: 35px 35px 80px; } }
-    .about-question .question-content .question-header {
-      width: 450px;
+      .trash .item-trash .item-trash__number {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        margin: 0; } }
+    .trash .item-trash .item-trash__number .item-trash-btn {
+      width: 30px;
+      display: block;
+      font-size: 26px;
       font-weight: 500;
-      font-size: 32px; }
-      @media screen and (max-width: 576px) {
-        .about-question .question-content .question-header {
-          width: 100%;
-          font-size: 22px; } }
-    .about-question .question-content form {
-      display: flex;
-      flex-direction: column; }
-      .about-question .question-content form input {
-        background-color: transparent;
-        border-bottom: 1px solid #fff;
-        width: 330px;
-        margin-bottom: 40px;
-        color: #fff;
-        padding-left: 0; }
-        .about-question .question-content form input::placeholder {
-          color: #fff; }
-        @media screen and (max-width: 576px) {
-          .about-question .question-content form input {
-            width: 100%; } }
-      .about-question .question-content form button {
-        background: #219653;
-        border-radius: 5px;
-        padding: 16px;
-        font-weight: bold;
-        font-size: 14px;
-        color: #fff;
-        width: 220px;
-        transition: .2s; }
-        .about-question .question-content form button:hover {
-          background: #197c44; }
+      text-align: center; }
+    .trash .item-trash .item-trash__number .item-trash-value {
+      width: 40px; }
+  .trash .item-trash .item-trash__total-price {
+    margin-left: auto;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px; }
+  .trash .item-trash .item-trash__del {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: gray; }
+
+.trash .trash-total {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 30px; }
+  .trash .trash-total .trash-total__val {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px; }
+    .trash .trash-total .trash-total__val .trash-total__val_text {
+      color: gray; }
+  .trash .trash-total .trash-total__sum {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px; }
+    .trash .trash-total .trash-total__sum .trash-total__sum_text {
+      color: gray; }
+  .trash .trash-total .trash-total-btn {
+    padding: 20px;
+    width: 100%;
+    background: #27AE60;
+    color: #fff;
+    border: 1px solid #27AE60;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: 500; }
+    .trash .trash-total .trash-total-btn:hover {
+      background: #009245; }
 
 /* Sliders */
 /* Aos */
