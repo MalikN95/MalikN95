@@ -4,6 +4,9 @@
         border-radius: 10px;
         .about-card-slider{
             padding: 60px 80px;
+            @include mobile{
+                padding: 25px 25px 60px;
+            }
             .about-card-slider__content{
                 .abour-card__text{
                     font-weight: 400;
@@ -13,12 +16,16 @@
             }
         }
         .about-card-img{
-
             height: 100%;
+            @include mobile{
+                height: 330px;
+            }
             img{
                 height: 100%;
                 object-fit: cover;
                 object-position: center center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
             }
         }
         .about-card-slider{
@@ -46,6 +53,11 @@
             }
             .swiper-button-prev, .swiper-button-next{
                 box-shadow: none;
+            }
+        }
+        .row{
+            @include mobile{
+                flex-direction: column-reverse;
             }
         }
     }

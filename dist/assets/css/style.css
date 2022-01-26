@@ -1670,16 +1670,24 @@ button {
   border-radius: 10px; }
   .about .about-card .about-card-slider {
     padding: 60px 80px; }
+    @media screen and (max-width: 576px) {
+      .about .about-card .about-card-slider {
+        padding: 25px 25px 60px; } }
     .about .about-card .about-card-slider .about-card-slider__content .abour-card__text {
       font-weight: 400;
       font-size: 16px;
       text-align: left; }
   .about .about-card .about-card-img {
     height: 100%; }
+    @media screen and (max-width: 576px) {
+      .about .about-card .about-card-img {
+        height: 330px; } }
     .about .about-card .about-card-img img {
       height: 100%;
       object-fit: cover;
-      object-position: center center; }
+      object-position: center center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
   .about .about-card .about-card-slider .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -1700,6 +1708,9 @@ button {
     bottom: 30px; }
   .about .about-card .about-card-slider .swiper-button-prev, .about .about-card .about-card-slider .swiper-button-next {
     box-shadow: none; }
+  @media screen and (max-width: 576px) {
+    .about .about-card .row {
+      flex-direction: column-reverse; } }
 
 .about-question {
   margin-top: 120px; }
