@@ -111,5 +111,15 @@ $(document).ready(function () {
       $(this).addClass('button-ative')
       $('.tab-content').removeClass('tab-active__content').eq(index).addClass('tab-active__content')
     })
+  });
+  $('.trash').each(function(){
+    $(this).on('click', function(){
+      $('.product-popup').addClass('popup-active');
+    })
+  });
+  $('.product-info__btn_continue').each(function(){
+    $(this).on('click', function(){
+      $('.product-popup').removeClass('popup-active');
+    })
   })
 });
