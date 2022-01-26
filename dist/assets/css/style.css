@@ -235,7 +235,7 @@ button {
 .section-header {
   font-weight: bold;
   font-size: 32px;
-  color: .section-header black; }
+  color: #1E1E1E; }
   @media screen and (max-width: 576px) {
     .section-header {
       font-size: 23px; } }
@@ -1574,9 +1574,33 @@ button {
   max-width: 900px;
   text-align: center;
   margin: 0 auto; }
+  @media screen and (max-width: 576px) {
+    .bath .bath-btn {
+      display: none; } }
   .bath .bath-btn:hover {
     background-color: #fff;
     color: #219653; }
+
+.bath .bath-btn-mob {
+  display: none;
+  background-color: #fff;
+  color: #219653;
+  font-weight: 500;
+  font-size: 17px;
+  border: 1px solid #219653;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 13px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto; }
+  @media screen and (max-width: 576px) {
+    .bath .bath-btn-mob {
+      display: block; } }
+  .bath .bath-btn-mob:hover {
+    background-color: #219653;
+    color: #fff; }
 
 .bath .page-block {
   width: 340px;
@@ -1599,6 +1623,9 @@ button {
   .bath .page-block .active {
     color: #fff;
     background-color: #219653; }
+  @media screen and (max-width: 576px) {
+    .bath .page-block {
+      display: none; } }
 
 .bath-card-section .bath-card__info {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
@@ -1758,6 +1785,9 @@ button {
     bottom: -20px;
     transform: translateX(-50%);
     z-index: 11; }
+    @media screen and (max-width: 576px) {
+      .about .about-card .about-card-slider .swiper-button {
+        display: none; } }
   .about .about-card .about-card-slider .swiper-pagination {
     bottom: 30px; }
   .about .about-card .about-card-slider .swiper-button-prev, .about .about-card .about-card-slider .swiper-button-next {

@@ -101,7 +101,7 @@ button {
 .section-header{
     font-weight: bold;
     font-size: 32px;
-    color: &black;
+    color: $black;
     @include mobile{
         font-size: 23px;
     }

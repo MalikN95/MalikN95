@@ -121,9 +121,34 @@
         max-width: 900px;
         text-align: center;
         margin: 0 auto;
+        @include mobile{
+            display: none;
+        }
         &:hover{
             background-color: $white;
             color: $green;
+        }
+    }
+    .bath-btn-mob{
+        display: none;
+        background-color: $white;
+        color: $green;
+        font-weight: 500;
+        font-size: 17px;
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 13px;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        @include mobile{
+            display: block;
+        }
+        &:hover{
+            background-color: $green;
+            color: $white;
         }
     }
     .page-block{
@@ -149,6 +174,9 @@
         .active{
             color: $white;
             background-color: $green;
+        }
+        @include mobile{
+            display: none;
         }
     }
 }
