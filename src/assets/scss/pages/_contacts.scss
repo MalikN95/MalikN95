@@ -36,6 +36,9 @@
         .contact-info__social{
             padding: 25px 80px 30px;
             margin-top: 40px;
+            @include mobile{
+                padding: 25px 40px;
+            }
             .social-title{
                 font-weight: bold;
                 font-size: 14px;
@@ -55,6 +58,10 @@
     }
     .contact-form{
         padding: 50px 80px 40px;
+        @include mobile{
+            margin-top: 40px;
+            padding: 40px 30px;
+        }
         .contact-form__title{
             font-weight: 500;
             font-size: 24px;
