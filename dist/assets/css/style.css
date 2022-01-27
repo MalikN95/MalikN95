@@ -1567,9 +1567,33 @@ button {
       .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range {
         width: 100%;
         margin-left: 40px; }
-        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range input {
+        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range {
+          -webkit-appearance: none;
+          background: #27AE60;
           padding: 0;
-          height: 1px; }
+          height: 2px;
+          border: 1px solid #27AE60;
+          position: relative;
+          width: 90%; }
+        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          background: #27AE60;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          cursor: pointer; }
+        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range::before {
+          content: "0";
+          color: gray;
+          position: absolute;
+          top: 5px;
+          left: -3px; }
+        .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range::after {
+          content: "100";
+          color: gray;
+          position: absolute;
+          top: 5px;
+          right: -3px; }
 
 .bath .catalog-category .catalog-category__item {
   padding: 11px 20px;
