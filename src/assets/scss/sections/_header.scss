@@ -20,6 +20,7 @@
             }
         }
         .header-catalog{
+            position: relative;
             background-color: $bl-green;
             padding: 13px;
             border-radius: 5px;
@@ -31,6 +32,30 @@
                 &::after{
                     content: url(/assets/images/icons/arrow-catalog.svg);
                     margin-left: 10px;
+                }
+            }
+            &:hover .catalog-dropdown{
+                visibility: visible;
+                transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            .catalog-dropdown{
+                position: absolute;
+                background-color: $bl-green;
+                padding: 13px;
+                border-radius: 5px;
+                top: 40px;
+                left: 0;
+                z-index: 57;
+                visibility: hidden;
+                transform: translateY(-50px);
+                opacity: 0;
+                transition: transform 0.1s ease 0s, opacity 0.2s ease 0s;
+                a{
+                    color: $white;
+                    margin-bottom: 20px;
+                    line-height: 40px;
                 }
             }
         }

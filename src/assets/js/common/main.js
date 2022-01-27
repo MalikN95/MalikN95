@@ -85,20 +85,34 @@ $(document).ready(function () {
     keyboard: true,
   });
 
-  let acc = document.querySelectorAll('.accordion')
-  if(acc.length > 0){
-    for(let i = 0; i<acc.length; i++){
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-  };
+  // let acc = document.querySelectorAll('.accordion')
+  // if(acc.length > 0){
+  //   for(let i = 0; i<acc.length; i++){
+  //     acc[i].addEventListener("click", function() {
+  //       this.classList.toggle("active");
+  //       let panel = this.nextElementSibling;
+  //       if (panel.style.display === "block") {
+  //         panel.style.display = "none";
+  //       } else {
+  //         panel.style.display = "block";
+  //       }
+  //     });
+  //   }
+  // };
+  $('.accordion-container').each(function(){
+    $(this).on('click', function(){
+      let panel = $(this).find('.panel')
+      let acc = $(this).find('.accordion-btn')
+      if(acc.hasClass('active')){
+        panel.slideUp(300)
+        acc.removeClass('active')
+
+      }else{
+        panel.slideDown(300)
+        acc.addClass('active')
+      }
+    })
+  })
   
   $('.catalog-category__item').on('click', function () {
     $(this).addClass('active');
@@ -121,5 +135,25 @@ $(document).ready(function () {
     $(this).on('click', function(){
       $('.product-popup').removeClass('popup-active');
     })
+  });
+
+  let swiper1 = new Swiper(".bath-card-thum", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  let swiper2 = new Swiper(".bath-card-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper1,
+    },
   })
 });
