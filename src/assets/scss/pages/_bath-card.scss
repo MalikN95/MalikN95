@@ -9,14 +9,25 @@
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         padding: 45px 75px;
+        @include mobile{
+            padding: 25px;
+        }
         .bath-card__title{
             font-weight: 600;
             font-size: 24px;
+            @include mobile{
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
         }
         .bath-card__type{
             font-weight: 500;
             font-size: 14px;
             color: $lt-green;
+            @include mobile{
+                margin-bottom: 40px;
+            }
+
         }
         .bath-card__specification{
             margin-top: 30px;
@@ -32,6 +43,9 @@
                     width: 40%;
                     color: #E3E3E3;
                     border: 1px solid #E3E3E3;
+                    @include mobile{
+                        width: 20%;
+                    }
                 }
                 .bath-card__price{
                     font-weight: 600;
@@ -200,6 +214,7 @@
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
+        cursor: pointer;
       }
     
       .swiper {
@@ -218,6 +233,9 @@
         height: 70%;
         width: 100%;
         margin-bottom: 30px;
+        @include mobile{
+            margin-bottom: 10px;
+        }
       }
     
       .bath-card-thum {
@@ -226,6 +244,9 @@
         padding: 10px 0;
         width: 500px;
         margin-left: 0;
+        @include mobile{
+            width: 100%;
+        }
       }
     
       .mySwiper .swiper-slide {
@@ -247,6 +268,9 @@
     .swiper-button-next{
         top: 85%;
         color: $lt-green;
+        @include mobile{
+            display: none;
+        }
     }
 }
 
