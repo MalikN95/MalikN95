@@ -2112,7 +2112,6 @@ button {
         color: #219653;
         padding: 11px;
         text-align: center;
-        width: 200px;
         max-width: 240px;
         display: block; }
         @media screen and (max-width: 576px) {
@@ -2222,8 +2221,13 @@ button {
       height: 100%;
       object-fit: cover;
       object-position: center center;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      @media screen and (max-width: 576px) {
+        .about .about-card .about-card-img img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 0px; } }
   .about .about-card .about-card-slider .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
