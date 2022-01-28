@@ -4,7 +4,7 @@
         .contact-info__method{
             padding: 55px 80px 15px;
             @include mobile{
-                padding: 35px 40px;
+                padding: 35px 40px 1px;
             }
         }
         .contact-info__method_item{

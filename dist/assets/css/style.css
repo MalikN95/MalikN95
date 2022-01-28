@@ -963,6 +963,8 @@ button {
       .popular-item .popular-item__slider {
         width: 80%;
         overflow: visible; } }
+  .popular-item .swiper {
+    margin-left: 0; }
 
 .recommended-item {
   margin-top: 120px; }
@@ -986,6 +988,8 @@ button {
     @media screen and (max-width: 576px) {
       .recommended-item .mob-slider {
         display: block; } }
+  .recommended-item .swiper {
+    margin-left: 0; }
 
 .why {
   margin-top: 100px;
@@ -1290,7 +1294,8 @@ button {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 20px 14px; } }
+        padding: 20px 14px;
+        margin: 10px 0; } }
     @media screen and (max-width: 576px) {
       .catalog-wrapper .catalog-cards .item__card .card-img {
         width: 25%;
@@ -1310,6 +1315,44 @@ button {
     @media screen and (max-width: 576px) {
       .catalog-wrapper .catalog-cards {
         width: 100%; } }
+    .catalog-wrapper .catalog-cards .bath-btn {
+      display: block;
+      background-color: #219653;
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+      border: 1px solid #219653;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 13px;
+      width: 100%;
+      text-align: center;
+      margin: 40px auto; }
+      @media screen and (max-width: 576px) {
+        .catalog-wrapper .catalog-cards .bath-btn {
+          display: none; } }
+      .catalog-wrapper .catalog-cards .bath-btn:hover {
+        background-color: #fff;
+        color: #219653; }
+    .catalog-wrapper .catalog-cards .bath-btn-mob {
+      display: none;
+      background-color: #fff;
+      color: #219653;
+      font-weight: 500;
+      font-size: 17px;
+      border: 1px solid #219653;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 13px;
+      width: 100%;
+      text-align: center;
+      margin: 40px auto; }
+      @media screen and (max-width: 576px) {
+        .catalog-wrapper .catalog-cards .bath-btn-mob {
+          display: block; } }
+      .catalog-wrapper .catalog-cards .bath-btn-mob:hover {
+        background-color: #219653;
+        color: #fff; }
 
 .item .item-card {
   display: flex;
@@ -1467,7 +1510,7 @@ button {
   padding: 55px 80px 15px; }
   @media screen and (max-width: 576px) {
     .contacts .contact-info .contact-info__method {
-      padding: 35px 40px; } }
+      padding: 35px 40px 1px; } }
 
 .contacts .contact-info .contact-info__method_item {
   display: flex;

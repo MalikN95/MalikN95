@@ -41,15 +41,15 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 10
       },
       768:{
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 10
       },
       1100:{
         slidesPerView: 4,
-        spaceBetween: 30
+        spaceBetween: 10
       }
     }
   });
