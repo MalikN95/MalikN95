@@ -55,7 +55,10 @@
                 bottom: 30px;
             }
             .swiper-button-prev, .swiper-button-next{
-                box-shadow: none;
+                color: #ACADC0;
+                &:after{
+                    font-size: 22px;
+                }
             }
         }
         .row{

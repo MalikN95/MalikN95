@@ -41,6 +41,24 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 30
+      },
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1100:{
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }
+  });
+  let recomendedItem = new Swiper(".recomended-item__slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
         spaceBetween: 10
       },
       768:{
@@ -53,7 +71,7 @@ $(document).ready(function () {
       }
     }
   });
-  let recomendedItem = new Swiper(".recomended-item__slider", {
+  let bashSlide = new Swiper(".bash__slider", {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {

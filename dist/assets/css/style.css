@@ -1851,12 +1851,24 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: 170px; }
+  @media screen and (max-width: 576px) {
+    .bath-card-section .item-info {
+      margin-top: 60px; } }
   .bath-card-section .item-info .item-info__tabs {
     width: 60%; }
+    @media screen and (max-width: 576px) {
+      .bath-card-section .item-info .item-info__tabs {
+        width: 100%; } }
     .bath-card-section .item-info .item-info__tabs .tab-buttons {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #E3E3E3; }
+      border-bottom: 1px solid #E3E3E3;
+      overflow-x: auto; }
+    .bath-card-section .item-info .item-info__tabs .tab-buttons::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .bath-card-section .item-info .item-info__tabs .tab-buttons::-webkit-scrollbar {
+      height: 5px;
+      display: none; }
     .bath-card-section .item-info .item-info__tabs .tabs-button {
       padding-bottom: 20px;
       color: #C4C4C4;
@@ -1866,11 +1878,18 @@ button {
       border-bottom: 2px solid transparent; }
       .bath-card-section .item-info .item-info__tabs .tabs-button:hover {
         border-bottom: 2px solid #C4C4C4; }
+      @media screen and (max-width: 576px) {
+        .bath-card-section .item-info .item-info__tabs .tabs-button {
+          font-size: 14px;
+          margin-right: 30px; } }
     .bath-card-section .item-info .item-info__tabs .button-ative {
       border-bottom: 2px solid #219653;
       color: #219653;
       font-weight: 600;
       font-size: 17px; }
+      @media screen and (max-width: 576px) {
+        .bath-card-section .item-info .item-info__tabs .button-ative:hover {
+          border-bottom: 2px solid #219653; } }
     .bath-card-section .item-info .item-info__tabs .item-specifications ul li {
       display: flex;
       justify-content: space-between;
@@ -1918,6 +1937,9 @@ button {
     width: 30%; }
     .bath-card-section .item-info .item-info__img img {
       border-radius: 10px; }
+    @media screen and (max-width: 576px) {
+      .bath-card-section .item-info .item-info__img {
+        display: none; } }
 
 .bath-card-section .swiper {
   width: 100%;
@@ -1998,6 +2020,142 @@ button {
     .bath-card-section .swiper-button-next {
       display: none; } }
 
+.other-bath {
+  margin-top: 60px; }
+  .other-bath .section-header {
+    margin: 30px 0; }
+  @media screen and (max-width: 576px) {
+    .other-bath .show-btn {
+      display: none; } }
+  @media screen and (max-width: 576px) {
+    .other-bath .desctop-bath {
+      display: none; } }
+  .other-bath .bath-card {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column; }
+    .other-bath .bath-card .bath-card__img {
+      height: 200px; }
+      .other-bath .bath-card .bath-card__img img {
+        object-fit: cover;
+        object-position: right; }
+    .other-bath .bath-card .bath-card__text {
+      padding: 30px; }
+      .other-bath .bath-card .bath-card__text .bath-card__title {
+        font-weight: 500;
+        font-size: 16px; }
+      .other-bath .bath-card .bath-card__text p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-bottom: 5px; }
+      .other-bath .bath-card .bath-card__text .bath-card__price {
+        display: flex;
+        justify-content: space-between;
+        margin: 18px 0; }
+        .other-bath .bath-card .bath-card__text .bath-card__price .new-price {
+          font-weight: 600;
+          font-size: 18px; }
+        .other-bath .bath-card .bath-card__text .bath-card__price .old-price {
+          font-weight: 400;
+          font-size: 14px;
+          text-decoration-line: line-through;
+          color: #ACADC0; }
+      .other-bath .bath-card .bath-card__text .bath-card__btn {
+        border: 1px solid #219653;
+        border-radius: 5px;
+        color: #219653;
+        padding: 11px;
+        text-align: center;
+        width: 200px;
+        max-width: 240px;
+        display: block; }
+        @media screen and (max-width: 576px) {
+          .other-bath .bath-card .bath-card__text .bath-card__btn {
+            display: none; } }
+        .other-bath .bath-card .bath-card__text .bath-card__btn:hover {
+          background-color: #219653;
+          color: #fff; }
+      .other-bath .bath-card .bath-card__text .bath-card__btn-mob {
+        display: none; }
+        @media screen and (max-width: 576px) {
+          .other-bath .bath-card .bath-card__text .bath-card__btn-mob {
+            display: block; } }
+  .other-bath .bath-btn {
+    display: block;
+    background-color: #219653;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    border: 1px solid #219653;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 13px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto; }
+    @media screen and (max-width: 576px) {
+      .other-bath .bath-btn {
+        display: none; } }
+    .other-bath .bath-btn:hover {
+      background-color: #fff;
+      color: #219653; }
+  .other-bath .bath-btn-mob {
+    display: none;
+    background-color: #fff;
+    color: #219653;
+    font-weight: 500;
+    font-size: 17px;
+    border: 1px solid #219653;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 13px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-left: 0; }
+    @media screen and (max-width: 576px) {
+      .other-bath .bath-btn-mob {
+        display: block; } }
+    .other-bath .bath-btn-mob:hover {
+      background-color: #219653;
+      color: #fff; }
+
+.mob-bath {
+  display: none; }
+  @media screen and (max-width: 576px) {
+    .mob-bath {
+      display: block; } }
+  .mob-bath .bash__slider {
+    width: 85%;
+    overflow: visible; }
+  .mob-bath .bath-card {
+    text-align: left;
+    width: 95%; }
+    .mob-bath .bath-card .bath-card__img img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+      object-position: center center; }
+    .mob-bath .bath-card .bath-card__btn-mob {
+      border: 1px solid #219653;
+      border-radius: 5px;
+      color: #219653;
+      padding: 11px;
+      text-align: center;
+      width: 150px;
+      max-width: 240px;
+      display: block; }
+      @media screen and (max-width: 576px) {
+        .mob-bath .bath-card .bath-card__btn-mob {
+          display: none; } }
+      .mob-bath .bath-card .bath-card__btn-mob:hover {
+        background-color: #219653;
+        color: #fff; }
+
 .about .about-card {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px; }
@@ -2043,7 +2201,9 @@ button {
   .about .about-card .about-card-slider .swiper-pagination {
     bottom: 30px; }
   .about .about-card .about-card-slider .swiper-button-prev, .about .about-card .about-card-slider .swiper-button-next {
-    box-shadow: none; }
+    color: #ACADC0; }
+    .about .about-card .about-card-slider .swiper-button-prev:after, .about .about-card .about-card-slider .swiper-button-next:after {
+      font-size: 22px; }
   @media screen and (max-width: 576px) {
     .about .about-card .row {
       flex-direction: column-reverse; } }

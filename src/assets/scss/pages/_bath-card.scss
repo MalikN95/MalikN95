@@ -81,13 +81,29 @@
         display: flex;
         justify-content: space-between;
         margin-top: 170px;
+        @include mobile{
+            margin-top: 60px;
+        }
         .item-info__tabs{
             width: 60%;
+            
+            @include mobile{
+                width: 100%;
+            }
             .tab-buttons{
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 1px solid #E3E3E3;
+                overflow-x: auto;
             }
+            .tab-buttons::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+            .tab-buttons::-webkit-scrollbar {
+                height: 5px;
+                display: none;
+            }
+
             .tabs-button{
                 padding-bottom: 20px;
                 color: #C4C4C4;
@@ -98,12 +114,22 @@
                 &:hover{
                     border-bottom: 2px solid #C4C4C4;
                 }
+                @include mobile{
+                    font-size: 14px;
+                    margin-right: 30px;
+                }
             }
             .button-ative{
                 border-bottom: 2px solid $green;
                 color: $green;
                 font-weight: 600;
                 font-size: 17px;
+                &:hover{
+                    @include mobile{
+                        border-bottom: 2px solid $green;
+                    }
+                    
+                }
             }
             .item-specifications{
                 ul{
@@ -180,6 +206,9 @@
             width: 30%;
             img{
                 border-radius: 10px;
+            }
+            @include mobile{
+                display: none;
             }
         }
     }
@@ -273,4 +302,177 @@
         }
     }
 }
+.other-bath{
+    margin-top: 60px;
+    .section-header{
+        margin: 30px 0;
+    }
+    .show-btn{
+        @include mobile{
+            display: none;
+        }
+    }
+    .desctop-bath{
+        @include mobile{
+            display: none;
+        }
+    }
 
+        .bath-card{
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            margin-bottom: 55px;
+            display: flex;
+            flex-direction: column;
+
+            .bath-card__img{
+                height: 200px;
+
+                img{
+                    object-fit: cover;
+                    object-position: right;
+
+                }
+            }
+            .bath-card__text{
+                padding: 30px;
+
+                .bath-card__title{
+                    font-weight: 500;
+                    font-size: 16px;
+
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    margin-bottom: 5px;
+
+                }
+                .bath-card__price{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 18px 0;
+
+                    .new-price{
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    .old-price{
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-decoration-line: line-through;
+                        color: #ACADC0;
+
+
+                    }
+                }
+                .bath-card__btn{
+                    border: 1px solid $green;
+                    border-radius: 5px;
+                    color: $green;
+                    padding: 11px;
+                    text-align: center;
+                    width: 200px;
+                    max-width: 240px;
+                    display: block;
+                    @include mobile{
+                        display: none;
+                    }
+                    &:hover{
+                        background-color: $green;
+                        color: $white;
+                    }
+                }
+                .bath-card__btn-mob{
+                    display: none;
+                    @include mobile{
+                        display: block;
+                    }
+                }
+            }
+        }
+    .bath-btn{
+        display: block;
+        background-color: $green;
+        color: $white;
+        font-weight: 500;
+        font-size: 17px;
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 13px;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        @include mobile{
+            display: none;
+        }
+        &:hover{
+            background-color: $white;
+            color: $green;
+        }
+    }
+    .bath-btn-mob{
+        display: none;
+        background-color: $white;
+        color: $green;
+        font-weight: 500;
+        font-size: 17px;
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 13px;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        margin-left: 0;
+        @include mobile{
+            display: block;
+        }
+        &:hover{
+            background-color: $green;
+            color: $white;
+        }
+    }
+}
+.mob-bath{
+    display: none;
+    @include mobile{
+        display: block;
+    }
+    .bash__slider{
+        width: 85%;
+        overflow: visible;
+    }
+    .bath-card{
+        text-align: left;
+        width: 95%;
+        .bath-card__img{
+            img{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .bath-card__btn-mob {
+            border: 1px solid $green;
+            border-radius: 5px;
+            color: $green;
+            padding: 11px;
+            text-align: center;
+            width: 150px;
+            max-width: 240px;
+            display: block;
+            @include mobile{
+                display: none;
+            }
+            &:hover{
+                background-color: $green;
+                color: $white;
+            }
+        }
+    }
+}
