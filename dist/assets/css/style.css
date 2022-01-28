@@ -2132,6 +2132,8 @@ button {
   .mob-bath .bash__slider {
     width: 85%;
     overflow: visible; }
+  .mob-bath .swiper {
+    margin-left: 0; }
   .mob-bath .bath-card {
     text-align: left;
     width: 95%; }
