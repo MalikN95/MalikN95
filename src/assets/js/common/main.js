@@ -139,8 +139,8 @@ $(document).ready(function () {
 
   let swiper1 = new Swiper(".bath-card-thum", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
