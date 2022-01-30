@@ -149,7 +149,16 @@ button {
     padding: 20px 30px;
     width: 300px;
     margin: 10px;
-
+    position: relative;
+    &::after{
+        content: url(/assets/images/icons/card-fovirit.svg);
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
     .card__item-name{
         color: $black;
         font-weight: normal;

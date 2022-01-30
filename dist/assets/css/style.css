@@ -280,7 +280,15 @@ button {
   border-radius: 10px;
   padding: 20px 30px;
   width: 300px;
-  margin: 10px; }
+  margin: 10px;
+  position: relative; }
+  .item__card::after {
+    content: url(/assets/images/icons/card-fovirit.svg);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: .3s; }
   .item__card .card__item-name {
     color: #1E1E1E;
     font-weight: normal;
@@ -1472,6 +1480,40 @@ button {
           font-size: 30px; }
         .item .item-card .item-card-info .item-buy .item-num input {
           text-align: center; }
+      .item .item-card .item-card-info .item-buy .item-type {
+        display: flex;
+        align-items: center; }
+        .item .item-card .item-card-info .item-buy .item-type .item-type__category {
+          border: none;
+          outline: none;
+          margin-left: 25px; }
+    .item .item-card .item-card-info .item-category {
+      border-radius: 5px;
+      border: 1px #219653 solid;
+      margin-top: 30px;
+      padding: 0; }
+      .item .item-card .item-card-info .item-category .item-category__title {
+        padding: 10px;
+        background-color: #219653;
+        color: #fff;
+        text-transform: uppercase;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+        top: -1px; }
+        .item .item-card .item-card-info .item-category .item-category__title h3 {
+          font-size: 18px;
+          margin: 0; }
+      .item .item-card .item-card-info .item-category .item-category__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px; }
+        .item .item-card .item-card-info .item-category .item-category__list a {
+          color: #219653;
+          display: block;
+          margin: 10px 0 0 15px; }
+          .item .item-card .item-card-info .item-category .item-category__list a:hover {
+            color: #009245; }
 
 .item .item-info {
   display: flex;
