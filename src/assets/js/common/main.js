@@ -161,6 +161,16 @@ $(document).ready(function () {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
   });
 
   let swiper2 = new Swiper(".bath-card-swiper", {

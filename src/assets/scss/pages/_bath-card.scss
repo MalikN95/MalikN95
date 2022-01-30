@@ -1,4 +1,22 @@
 .bath-card-section{
+    .mob-bash-type{
+        font-weight: 500;
+        font-size: 14px;
+        color: $lt-green;
+        margin-bottom: 30px;
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+    .mob-bash-title{
+        font-weight: 600;
+        font-size: 20px;
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
     .bath-card__slider{
         position: relative;
         height: 100%;
@@ -10,7 +28,7 @@
         border-radius: 10px;
         padding: 45px 75px;
         @include mobile{
-            padding: 25px;
+            padding: 1px 25px 20px;
         }
         .bath-card__title{
             font-weight: 600;
@@ -18,6 +36,7 @@
             @include mobile{
                 font-size: 20px;
                 margin-bottom: 25px;
+                display: none;
             }
         }
         .bath-card__type{
@@ -26,6 +45,7 @@
             color: $lt-green;
             @include mobile{
                 margin-bottom: 40px;
+                display: none;
             }
 
         }
@@ -34,22 +54,32 @@
             .specification-text{
                 display: flex;
                 justify-content: space-between;
+                position: relative;
                 p{
                     font-size: 14px;
                     font-weight: 400;
                     display: block;
-                }
-                hr{
-                    width: 40%;
-                    color: #E3E3E3;
-                    border: 1px solid #E3E3E3;
-                    @include mobile{
-                        width: 20%;
-                    }
+                    z-index: 2;
+                    background-color: $white;
+                    padding-right: 5px;
                 }
                 .bath-card__price{
                     font-weight: 600;
                     font-size: 14px;
+                    padding: 0 0 0 5px;
+                }
+                .p-left{
+                    padding-left: 5px;
+                }
+                &::before{
+                    content: '';
+                    border-bottom: 1px solid #E3E3E3;
+                    height: 1px;
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
                 }
             }
             .specification-title{
@@ -135,11 +165,12 @@
                 ul{
                     
                     li{
+                        padding: 20px 0;
                         display: flex;
                         justify-content: space-between;
                         border-bottom: 1px solid #E3E3E3;
                         p{
-                            padding: 20px;
+                            
                             margin: 0;
                             font-weight: 500;
                             font-size: 14px;
@@ -307,6 +338,16 @@
     .section-header{
         margin: 30px 0;
     }
+    .other-bath__all{
+        margin: 35px 0;
+        display: block;
+        font-weight: 600;
+        color: $green;
+        float: right;
+        @include mobile{
+            display: none;
+        }
+    }
     .show-btn{
         @include mobile{
             display: none;
@@ -353,7 +394,6 @@
                     display: flex;
                     justify-content: space-between;
                     margin: 18px 0;
-
                     .new-price{
                         font-weight: 600;
                         font-size: 18px;

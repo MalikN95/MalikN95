@@ -5,6 +5,9 @@
     }
     .item__card{
         margin-top: 40px;
+        @include mobile{
+            margin-top: 20px;
+        }
     }
     .recomended-item__slider{
         padding: 50px 0;
@@ -12,6 +15,7 @@
         @include mobile{
             width: 80%;
             overflow: visible;
+            padding: 1px 0;
         }
     }
     .desctop-item{

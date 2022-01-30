@@ -16,6 +16,7 @@
             @include mobile{
                 flex-direction: row;
                 height: 240px;
+                margin-bottom: 25px;
             }
             .bath-card__img{
                 height: 200px;
@@ -44,6 +45,8 @@
                     font-size: 16px;
                     @include mobile{
                         font-size: 14px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
                     }
                 }
                 p{
@@ -100,8 +103,13 @@
                 }
                 .bath-card__btn-mob{
                     display: none;
+                    padding: 11px;
+                    width: 100px;
+                    font-weight: 600;
+                    font-size: 12px;
                     @include mobile{
                         display: block;
+                        
                     }
                 }
             }
@@ -174,9 +182,6 @@
         .active{
             color: $white;
             background-color: $green;
-        }
-        @include mobile{
-            display: none;
         }
     }
 }

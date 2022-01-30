@@ -2,6 +2,7 @@
     .about-card{
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
+        margin-top: 30px;
         .about-card-slider{
             padding: 60px 80px;
             @include mobile{

@@ -380,6 +380,28 @@ button {
       font-size: 14px;
       font-weight: 600; }
 
+.page-block {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto; }
+  .page-block .page-link {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #219653;
+    color: #219653;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .page-block .page-link:hover {
+      color: #fff;
+      background-color: #219653; }
+  .page-block .active {
+    color: #fff;
+    background-color: #219653; }
+
 .position-relative {
   position: relative; }
 
@@ -681,7 +703,7 @@ button {
               content: url(/assets/images/icons/mob-calc.svg);
               width: 25px;
               height: 25px;
-              margin-right: 10px;
+              margin-right: 45px;
               position: absolute;
               right: 55px;
               top: -3px; }
@@ -952,7 +974,8 @@ button {
   .popular-item .all-item {
     font-weight: 600;
     color: #27AE60;
-    float: right; }
+    float: right;
+    margin-right: 10px; }
     @media screen and (max-width: 576px) {
       .popular-item .all-item {
         display: none; } }
@@ -962,7 +985,8 @@ button {
     @media screen and (max-width: 576px) {
       .popular-item .popular-item__slider {
         width: 80%;
-        overflow: visible; } }
+        overflow: visible;
+        padding: 10px 0; } }
   .popular-item .swiper {
     margin-left: 0; }
 
@@ -973,13 +997,17 @@ button {
       margin-top: 60px; } }
   .recommended-item .item__card {
     margin-top: 40px; }
+    @media screen and (max-width: 576px) {
+      .recommended-item .item__card {
+        margin-top: 20px; } }
   .recommended-item .recomended-item__slider {
     padding: 50px 0;
     overflow: hidden; }
     @media screen and (max-width: 576px) {
       .recommended-item .recomended-item__slider {
         width: 80%;
-        overflow: visible; } }
+        overflow: visible;
+        padding: 1px 0; } }
   @media screen and (max-width: 576px) {
     .recommended-item .desctop-item {
       display: none; } }
@@ -1123,6 +1151,8 @@ button {
     background-color: #219653;
     box-shadow: none;
     transform: scale(1); }
+  .wrapper-slider .swiper-slide {
+    cursor: pointer; }
 
 .catalog-category .catalog-category__item {
   padding: 12px 30px;
@@ -1357,6 +1387,9 @@ button {
 .item .item-card {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 576px) {
+    .item .item-card {
+      flex-direction: column; } }
   .item .item-card .item-card__img {
     width: 48%;
     text-align: center;
@@ -1365,8 +1398,14 @@ button {
     align-items: center; }
     .item .item-card .item-card__img img {
       width: 70%; }
+    @media screen and (max-width: 576px) {
+      .item .item-card .item-card__img {
+        width: 100%; } }
   .item .item-card .item-card-info {
     width: 48%; }
+    @media screen and (max-width: 576px) {
+      .item .item-card .item-card-info {
+        width: 100%; } }
     .item .item-card .item-card-info .item-artiqle {
       font-weight: 500;
       font-size: 14px;
@@ -1438,12 +1477,24 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: 170px; }
+  @media screen and (max-width: 576px) {
+    .item .item-info {
+      margin-top: 60px; } }
   .item .item-info .item-info__tabs {
     width: 60%; }
+    @media screen and (max-width: 576px) {
+      .item .item-info .item-info__tabs {
+        width: 100%; } }
     .item .item-info .item-info__tabs .tab-buttons {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #E3E3E3; }
+      border-bottom: 1px solid #E3E3E3;
+      overflow-x: auto; }
+    .item .item-info .item-info__tabs .tab-buttons::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .item .item-info .item-info__tabs .tab-buttons::-webkit-scrollbar {
+      height: 5px;
+      display: none; }
     .item .item-info .item-info__tabs .tabs-button {
       padding-bottom: 20px;
       color: #C4C4C4;
@@ -1451,6 +1502,10 @@ button {
       font-weight: 400;
       transition: .1s;
       border-bottom: 2px solid transparent; }
+      @media screen and (max-width: 576px) {
+        .item .item-info .item-info__tabs .tabs-button {
+          font-size: 14px;
+          margin-right: 30px; } }
       .item .item-info .item-info__tabs .tabs-button:hover {
         border-bottom: 2px solid #C4C4C4; }
     .item .item-info .item-info__tabs .button-ative {
@@ -1461,9 +1516,9 @@ button {
     .item .item-info .item-info__tabs .item-specifications ul li {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #E3E3E3; }
+      border-bottom: 1px solid #E3E3E3;
+      padding: 20px 0; }
       .item .item-info .item-info__tabs .item-specifications ul li p {
-        padding: 20px;
         margin: 0;
         font-weight: 500;
         font-size: 14px; }
@@ -1503,6 +1558,9 @@ button {
     display: block; }
   .item .item-info .item-info__img {
     width: 30%; }
+    @media screen and (max-width: 576px) {
+      .item .item-info .item-info__img {
+        display: none; } }
     .item .item-info .item-info__img img {
       border-radius: 10px; }
 
@@ -1681,7 +1739,8 @@ button {
     @media screen and (max-width: 576px) {
       .bath .bath-cards .bath-card {
         flex-direction: row;
-        height: 240px; } }
+        height: 240px;
+        margin-bottom: 25px; } }
     .bath .bath-cards .bath-card .bath-card__img {
       height: 200px; }
       @media screen and (max-width: 576px) {
@@ -1707,7 +1766,9 @@ button {
         font-size: 16px; }
         @media screen and (max-width: 576px) {
           .bath .bath-cards .bath-card .bath-card__text .bath-card__title {
-            font-size: 14px; } }
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px; } }
       .bath .bath-cards .bath-card .bath-card__text p {
         font-weight: 400;
         font-size: 14px;
@@ -1754,7 +1815,11 @@ button {
           background-color: #219653;
           color: #fff; }
       .bath .bath-cards .bath-card .bath-card__text .bath-card__btn-mob {
-        display: none; }
+        display: none;
+        padding: 11px;
+        width: 100px;
+        font-weight: 600;
+        font-size: 12px; }
         @media screen and (max-width: 576px) {
           .bath .bath-cards .bath-card .bath-card__text .bath-card__btn-mob {
             display: block; } }
@@ -1822,9 +1887,24 @@ button {
   .bath .page-block .active {
     color: #fff;
     background-color: #219653; }
+
+.bath-card-section .mob-bash-type {
+  font-weight: 500;
+  font-size: 14px;
+  color: #27AE60;
+  margin-bottom: 30px;
+  display: none; }
   @media screen and (max-width: 576px) {
-    .bath .page-block {
-      display: none; } }
+    .bath-card-section .mob-bash-type {
+      display: block; } }
+
+.bath-card-section .mob-bash-title {
+  font-weight: 600;
+  font-size: 20px;
+  display: none; }
+  @media screen and (max-width: 576px) {
+    .bath-card-section .mob-bash-title {
+      display: block; } }
 
 .bath-card-section .bath-card__slider {
   position: relative;
@@ -1836,40 +1916,51 @@ button {
   padding: 45px 75px; }
   @media screen and (max-width: 576px) {
     .bath-card-section .bath-card__info {
-      padding: 25px; } }
+      padding: 1px 25px 20px; } }
   .bath-card-section .bath-card__info .bath-card__title {
     font-weight: 600;
     font-size: 24px; }
     @media screen and (max-width: 576px) {
       .bath-card-section .bath-card__info .bath-card__title {
         font-size: 20px;
-        margin-bottom: 25px; } }
+        margin-bottom: 25px;
+        display: none; } }
   .bath-card-section .bath-card__info .bath-card__type {
     font-weight: 500;
     font-size: 14px;
     color: #27AE60; }
     @media screen and (max-width: 576px) {
       .bath-card-section .bath-card__info .bath-card__type {
-        margin-bottom: 40px; } }
+        margin-bottom: 40px;
+        display: none; } }
   .bath-card-section .bath-card__info .bath-card__specification {
     margin-top: 30px; }
     .bath-card-section .bath-card__info .bath-card__specification .specification-text {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      position: relative; }
       .bath-card-section .bath-card__info .bath-card__specification .specification-text p {
         font-size: 14px;
         font-weight: 400;
-        display: block; }
-      .bath-card-section .bath-card__info .bath-card__specification .specification-text hr {
-        width: 40%;
-        color: #E3E3E3;
-        border: 1px solid #E3E3E3; }
-        @media screen and (max-width: 576px) {
-          .bath-card-section .bath-card__info .bath-card__specification .specification-text hr {
-            width: 20%; } }
+        display: block;
+        z-index: 2;
+        background-color: #fff;
+        padding-right: 5px; }
       .bath-card-section .bath-card__info .bath-card__specification .specification-text .bath-card__price {
         font-weight: 600;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 0 0 0 5px; }
+      .bath-card-section .bath-card__info .bath-card__specification .specification-text .p-left {
+        padding-left: 5px; }
+      .bath-card-section .bath-card__info .bath-card__specification .specification-text::before {
+        content: '';
+        border-bottom: 1px solid #E3E3E3;
+        height: 1px;
+        position: absolute;
+        top: 14px;
+        left: 0;
+        right: 0;
+        z-index: 1; }
     .bath-card-section .bath-card__info .bath-card__specification .specification-title {
       font-weight: 500;
       font-size: 16px;
@@ -1934,11 +2025,11 @@ button {
         .bath-card-section .item-info .item-info__tabs .button-ative:hover {
           border-bottom: 2px solid #219653; } }
     .bath-card-section .item-info .item-info__tabs .item-specifications ul li {
+      padding: 20px 0;
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #E3E3E3; }
       .bath-card-section .item-info .item-info__tabs .item-specifications ul li p {
-        padding: 20px;
         margin: 0;
         font-weight: 500;
         font-size: 14px; }
@@ -2067,6 +2158,15 @@ button {
   margin-top: 60px; }
   .other-bath .section-header {
     margin: 30px 0; }
+  .other-bath .other-bath__all {
+    margin: 35px 0;
+    display: block;
+    font-weight: 600;
+    color: #219653;
+    float: right; }
+    @media screen and (max-width: 576px) {
+      .other-bath .other-bath__all {
+        display: none; } }
   @media screen and (max-width: 576px) {
     .other-bath .show-btn {
       display: none; } }
@@ -2202,7 +2302,8 @@ button {
 
 .about .about-card {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 30px; }
   .about .about-card .about-card-slider {
     padding: 60px 80px; }
     @media screen and (max-width: 576px) {

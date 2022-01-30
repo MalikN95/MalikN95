@@ -270,3 +270,29 @@ button {
     }
     
 }
+.page-block{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    .page-link{
+        width: 44px;
+        height: 44px;
+        border: 1px solid $green;
+        color: $green;
+        display: block;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color: $white;
+            background-color: $green;
+        }
+    }
+    .active{
+        color: $white;
+        background-color: $green;
+    }
+
+}
