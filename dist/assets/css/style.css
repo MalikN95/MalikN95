@@ -1251,26 +1251,33 @@ button {
       .catalog-wrapper .left-menu .filter-content .mdc-slider .mdc-slider__thumb::after {
         background-color: transparent; }
       .catalog-wrapper .left-menu .filter-content .mdc-slider .mdc-slider__thumb-knob {
-        background-color: #fff !important;
-        border: 2px solid #f47216 !important; }
+        background-color: #219653 !important;
+        border: 2px solid #219653 !important; }
       .catalog-wrapper .left-menu .filter-content .mdc-slider .mdc-slider__track--inactive {
         background: rgba(60, 60, 67, 0.18); }
       .catalog-wrapper .left-menu .filter-content .mdc-slider .mdc-slider__track--active {
         height: 4px; }
       .catalog-wrapper .left-menu .filter-content .mdc-slider .mdc-slider__track--active_fill {
-        background-color: #f47216 !important;
-        border-color: #f47216 !important; }
+        background-color: #219653 !important;
+        border-color: #219653 !important; }
   .catalog-wrapper .catalog-filter {
     width: 100%;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 30px;
+    padding-top: 40px;
     margin-top: 10px; }
     .catalog-wrapper .catalog-filter .catalog-filter__item {
       margin-top: 40px; }
       .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filter__item_title {
         font-weight: 600;
         font-size: 17px; }
+        .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filter__item_title-price {
+          display: block;
+          margin-bottom: 10px;
+          margin-top: 0; }
+      .catalog-wrapper .catalog-filter .catalog-filter__item-price {
+        margin-top: 0; }
       .catalog-wrapper .catalog-filter .catalog-filter__item .catalog-filtr__item_check {
         display: flex;
         align-items: center;
@@ -1308,6 +1315,20 @@ button {
         border: 1px solid #219653; }
       .catalog-wrapper .catalog-filter .catalog-filter__item .checkbox:checked::before {
         opacity: 1; }
+    .catalog-wrapper .catalog-filter .filter-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 10px; }
+    .catalog-wrapper .catalog-filter__item .filter-price input {
+      width: 100px;
+      height: 40px;
+      border: 1px solid #C4C4C4;
+      text-align: center;
+      border-radius: 3px; }
+    .catalog-wrapper .catalog-filter .delimeter {
+      font-size: 20px; }
     .catalog-wrapper .catalog-filter .catalog-filter__resset-btn {
       margin-top: 50px;
       padding: 15px;

@@ -230,25 +230,17 @@
                     </div>
                 </form>
             </div>
+
             <div class="catalog-wrapper">
                 <div class="left-menu">
                     <div class="catalog-filter">
-                        <div class="catalog-filter__item">
+                        <div class="catalog-filter__item catalog-filter__item-price">
+                            <span class="catalog-filter__item_title catalog-filter__item_title-price">Цена</span>
+
                             <div class="filter-content">
-                                <div class="filter-price">
-                                    <div class="position-relative"> <input type="text" class="form-input-text js-price-from" id="from" value="800 руб">
-                                        <span class="from">от</span>
-                                    </div>
-                                    <div class="position-relative">
-                                        <input type="text" class="form-input-text js-price-to" id="to" value="5000 руб">
-                                        <span class="to">до</span>
-                                    </div>
-                                </div>
-
-
                                 <div class="mdc-slider mdc-slider--range ">
                                     <input class="mdc-slider__input" type="range" min="0" max="1000" value="100" name="rangeStart" aria-label="Continuous range slider demo">
-                                    <input class="mdc-slider__input" type="range" min="30" max="8000" value="5000" name="rangeEnd" aria-label="Continuous range slider demo">
+                                    <input class="mdc-slider__input" type="range" min="10000" max="100000" value="50000" name="rangeEnd" aria-label="Continuous range slider demo">
                                     <div class="mdc-slider__track">
                                         <div class="mdc-slider__track--inactive"></div>
                                         <div class="mdc-slider__track--active">
@@ -262,6 +254,17 @@
                                         <div class="mdc-slider__thumb-knob"></div>
                                     </div>
                                 </div>
+                                <div class="filter-price">
+                                    <div class="position-relative"> <input type="text" class=" js-price-from" id="from" value="800">
+                                    </div>
+                                    <span class="delimeter">-</span>
+                                    <div class="position-relative">
+                                        <input type="text" class=" js-price-to" id="to" value="50 000">
+                                    </div>
+                                </div>
+
+
+
 
                             </div>
                         </div>

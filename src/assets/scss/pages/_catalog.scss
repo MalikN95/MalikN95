@@ -64,6 +64,9 @@
         @include mobile{
             display: none;
         }
+
+        
+
         .filter-content{
             .mdc-slider {
                 margin: 0 10px;
@@ -78,8 +81,8 @@
                 }
             
                 .mdc-slider__thumb-knob {
-                    background-color: $white !important;
-                    border: 2px solid $orange !important;
+                    background-color: $green !important;
+                    border: 2px solid $green !important;
                 }
             
                 .mdc-slider__track--inactive {
@@ -91,8 +94,8 @@
                 }
             
                 .mdc-slider__track--active_fill {
-                    background-color: $orange !important;
-                    border-color: $orange !important;
+                    background-color: $green !important;
+                    border-color: $green !important;
                 }
             }
             
@@ -103,12 +106,22 @@
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         padding: 30px;
+        padding-top: 40px;
         margin-top: 10px;
         .catalog-filter__item{
             margin-top: 40px;
             .catalog-filter__item_title{
                 font-weight: 600;
                 font-size: 17px;
+
+                &-price{
+                    display: block;
+                    margin-bottom: 10px;
+                    margin-top: 0;
+                }
+            }
+            &-price{
+                margin-top: 0;
             }
             .catalog-filtr__item_check {
                 display: flex;
@@ -158,6 +171,24 @@
                 opacity: 1;
             }
         }
+
+        .filter-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+         &__item .filter-price input{
+            width: 100px ;
+            height: 40px ;
+            border: 1px solid #C4C4C4;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .delimeter{
+            font-size: 20px;
+        }
         .catalog-filter__resset-btn{
             margin-top: 50px;
             padding: 15px;
@@ -173,6 +204,8 @@
             }
         }
     }
+
+
     .catalog-info{
         width: 100%;
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);

@@ -4,9 +4,39 @@ import Swiper from "./../libs/swiper";
 import $ from "jquery";
 const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
+const toDivide = function(value) {
+	var int = String(Math.trunc(value));
+	if(int.length <= 3) return int;
+	var space = 0;
+	var number = '';
+
+	for(var i = int.length - 1; i >= 0; i--) {
+		if(space == 3) {
+			number = ' ' + number;
+			space = 0;
+		}
+		number = int.charAt(i) + number;
+		space++;
+	}
+
+	return number;
+}
+
 $(document).ready(function () {
   let $preloader = $("#page-preloader");
   $preloader.fadeOut(1000);
+
+  
+  slider.root.addEventListener("MDCSlider:change", (e) => {
+    const details = e.detail;
+    if (details.thumb == 1) {
+      $(".js-price-from").val(toDivide(details.value));
+    }
+    if (details.thumb == 2) {
+      $(".js-price-to").val(toDivide(details.value));
+    }
+  });
+
   /* $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 30) {
