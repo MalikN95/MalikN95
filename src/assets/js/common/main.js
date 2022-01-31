@@ -1,41 +1,41 @@
-
 import { MDCSlider } from "@material/slider";
 import Swiper from "./../libs/swiper";
 import $ from "jquery";
-const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
-const toDivide = function(value) {
-	var int = String(Math.trunc(value));
-	if(int.length <= 3) return int;
-	var space = 0;
-	var number = '';
+const toDivide = function (value) {
+  var int = String(Math.trunc(value));
+  if (int.length <= 3) return int;
+  var space = 0;
+  var number = "";
 
-	for(var i = int.length - 1; i >= 0; i--) {
-		if(space == 3) {
-			number = ' ' + number;
-			space = 0;
-		}
-		number = int.charAt(i) + number;
-		space++;
-	}
+  for (var i = int.length - 1; i >= 0; i--) {
+    if (space == 3) {
+      number = " " + number;
+      space = 0;
+    }
+    number = int.charAt(i) + number;
+    space++;
+  }
 
-	return number;
-}
+  return number;
+};
 
 $(document).ready(function () {
   let $preloader = $("#page-preloader");
   $preloader.fadeOut(1000);
-
-  
-  slider.root.addEventListener("MDCSlider:change", (e) => {
-    const details = e.detail;
-    if (details.thumb == 1) {
-      $(".js-price-from").val(toDivide(details.value));
-    }
-    if (details.thumb == 2) {
-      $(".js-price-to").val(toDivide(details.value));
-    }
-  });
+  let rangeMDCSlider = document.querySelector(".mdc-slider");
+  if (rangeMDCSlider) {
+    const slider = new MDCSlider(rangeMDCSlider);
+    slider.root.addEventListener("MDCSlider:change", (e) => {
+      const details = e.detail;
+      if (details.thumb == 1) {
+        $(".js-price-from").val(toDivide(details.value));
+      }
+      if (details.thumb == 2) {
+        $(".js-price-to").val(toDivide(details.value));
+      }
+    });
+  }
 
   /* $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -76,17 +76,17 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      768:{
+      768: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      1100:{
+      1100: {
         slidesPerView: 4,
-        spaceBetween: 10
-      }
-    }
+        spaceBetween: 10,
+      },
+    },
   });
   let recomendedItem = new Swiper(".recomended-item__slider", {
     slidesPerView: 4,
@@ -94,17 +94,17 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      768:{
+      768: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      1100:{
+      1100: {
         slidesPerView: 4,
-        spaceBetween: 10
-      }
-    }
+        spaceBetween: 10,
+      },
+    },
   });
   let bashSlide = new Swiper(".bash__slider", {
     slidesPerView: 4,
@@ -112,17 +112,17 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      768:{
+      768: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      1100:{
+      1100: {
         slidesPerView: 4,
-        spaceBetween: 10
-      }
-    }
+        spaceBetween: 10,
+      },
+    },
   });
 
   let aboutSwiper = new Swiper(".about-card-slider", {
@@ -152,42 +152,44 @@ $(document).ready(function () {
   //     });
   //   }
   // };
-  $('.accordion-container').each(function(){
-    $(this).on('click', function(){
-      let panel = $(this).find('.panel')
-      let acc = $(this).find('.accordion-btn')
-      if(acc.hasClass('active')){
-        panel.slideUp(300)
-        acc.removeClass('active')
-
-      }else{
-        panel.slideDown(300)
-        acc.addClass('active')
+  $(".accordion-container").each(function () {
+    $(this).on("click", function () {
+      let panel = $(this).find(".panel");
+      let acc = $(this).find(".accordion-btn");
+      if (acc.hasClass("active")) {
+        panel.slideUp(300);
+        acc.removeClass("active");
+      } else {
+        panel.slideDown(300);
+        acc.addClass("active");
       }
-    })
-  })
-  
-  $('.catalog-category__item').on('click', function () {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
+    });
   });
 
-  $('.tabs-button').each(function(index){
-    $(this).on('click', function(){
-      $('.tabs-button').removeClass('button-ative');
-      $(this).addClass('button-ative')
-      $('.tab-content').removeClass('tab-active__content').eq(index).addClass('tab-active__content')
-    })
+  $(".catalog-category__item").on("click", function () {
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
   });
-  $('.trash').each(function(){
-    $(this).on('click', function(){
-      $('.product-popup').addClass('popup-active');
-    })
+
+  $(".tabs-button").each(function (index) {
+    $(this).on("click", function () {
+      $(".tabs-button").removeClass("button-ative");
+      $(this).addClass("button-ative");
+      $(".tab-content")
+        .removeClass("tab-active__content")
+        .eq(index)
+        .addClass("tab-active__content");
+    });
   });
-  $('.product-info__btn_continue').each(function(){
-    $(this).on('click', function(){
-      $('.product-popup').removeClass('popup-active');
-    })
+  $(".trash").each(function () {
+    $(this).on("click", function () {
+      $(".product-popup").addClass("popup-active");
+    });
+  });
+  $(".product-info__btn_continue").each(function () {
+    $(this).on("click", function () {
+      $(".product-popup").removeClass("popup-active");
+    });
   });
 
   let swiper1 = new Swiper(".bath-card-thum", {
@@ -199,13 +201,13 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 10,
       },
-      768:{
+      768: {
         slidesPerView: 3,
-        spaceBetween: 30
-      }
-    }
+        spaceBetween: 30,
+      },
+    },
   });
 
   let swiper2 = new Swiper(".bath-card-swiper", {
@@ -219,5 +221,4 @@ $(document).ready(function () {
       swiper: swiper1,
     },
   });
-  
 });
