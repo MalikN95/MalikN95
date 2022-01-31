@@ -1,0 +1,59 @@
+.active-user-container {
+    display: none;
+}
+
+@include mobile {
+
+    .active-user-container {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        background-color: $white;
+        padding: 10px;
+        width: 100%;
+        z-index: 9;
+
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+
+            .active-item-container{
+                position: relative;
+            }
+            .item-count {
+                background-color: $orange;
+                position: absolute;
+                color: $white;
+                border-radius: 50%;
+                padding: 2px 4px;
+                border: 1px solid $white;
+                right: 4px;
+                top: -9px;  
+                font-size: 10px;
+            }
+            li{
+                position: relative;
+            }
+
+
+
+            li>a {
+                color: $black;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+
+            .active {
+                color: $orange;
+            }
+
+        }
+    }
+}

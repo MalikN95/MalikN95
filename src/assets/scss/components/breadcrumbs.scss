@@ -1,0 +1,21 @@
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    li{
+        display: flex;
+        align-items: center;
+
+        
+    }
+    a{
+        color: $light-grey;
+        font-size: 14px;
+    }
+}
+
+@include mobile{
+    .breadcrumbs{
+        margin-bottom: 30px;
+    }
+}

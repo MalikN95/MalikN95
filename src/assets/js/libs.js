@@ -1,2 +1,2 @@
-@@include("libs/jquery.js")
-@@include("libs/swiper.js")
+// @@include("libs/jquery.js")
+// @@include("libs/swiper.js")

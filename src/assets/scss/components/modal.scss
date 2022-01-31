@@ -1,0 +1,335 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 51, 51, 0.4);
+    top: 0;
+    z-index: 998;
+}
+
+.modal {
+    display: none;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 416px;
+    height: fit-content;
+    background: $white;
+    z-index: 999;
+    padding: 20px;
+
+    .form-checkbox label:before {
+        position: absolute;
+        top: 3px;
+    }
+
+    .form-checkbox {
+        text-align: left;
+        display: flex;
+        font-size: 14px;
+
+        label {
+            align-items: baseline;
+        }
+
+        span {
+            margin-left: 30px;
+        }
+
+        svg {
+            top: 2px;
+        }
+    }
+
+
+
+    .title {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .action {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .modal-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 9;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .text {
+        font-size: 14px;
+
+        .edit {
+            padding-left: 13px;
+        }
+
+        &.text-center {
+            text-align: center;
+        }
+    }
+
+    .modal-back {
+        position: absolute;
+        left: -15px;
+        top: 16px;
+        cursor: pointer;
+        background-color: $white;
+        border-radius: 50%;
+        padding: 8px;
+
+        .i-back {
+
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &.modal-time-out {
+        .title {
+            margin-bottom: 40px;
+        }
+
+        .text {
+            margin-bottom: 60px;
+        }
+    }
+
+
+
+    &.fast-pay-modal {
+
+        .form-input-text {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .action {
+            margin-top: 20px;
+
+            button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+
+    .modal-product {
+        margin-top: 40px;
+        display: flex;
+
+        &__image {
+            width: 59px;
+            height: 59px;
+            margin-right: 20px;
+        }
+
+        &__content-name {
+            text-align: left;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            margin: 14px 0;
+
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .new-price {
+                font-weight: 600;
+                font-size: 16px;
+                margin-right: 6px;
+            }
+
+            .old-price {
+                font-size: 12px;
+                line-height: 16px;
+                color: $light-grey;
+                text-decoration-line: line-through;
+            }
+        }
+
+        &__content-add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(53, 51, 51, 0.05);
+            ;
+            padding: 2px 10px;
+            border-radius: 4px;
+            width: fit-content;
+
+            input {
+                padding: 0;
+                text-align: center;
+                width: 50px;
+                border-radius: 4px;
+                height: 26px;
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@include mobile {
+
+    .modal {
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        transition: 400ms;
+        display: none;
+
+        .modal-product {
+            margin-top: 30px;
+        }
+
+        .modal-product__content {
+            text-align: left;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        &.modal-time-out {
+            .title {
+                margin-bottom: 30px;
+            }
+
+            .text {
+                margin-bottom: 0;
+            }
+        }
+
+
+        &.modal-mobile-back {
+            left: 100%;
+            transform: translate(0%, -50%);
+        }
+
+
+        .form-input-text {
+            margin-top: 30px !important;
+        }
+
+        .modal-back {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            position: relative;
+            height: 100%;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.modal-text-center {
+            .modal-content {
+                position: absolute;
+                top: 50% !important;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%) !important;
+                text-align: center;
+            }
+        }
+
+    }
+
+
+
+}
+
+.review-modal {
+
+    padding-bottom: 40px !important;
+
+
+    @include mobile {
+        .modal-content {
+            top: 0;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+
+        @include mobile {
+            margin-bottom: 15px;
+        }
+    }
+
+    .stars {
+
+        .star-label {
+            margin-bottom: 22px;
+
+            input {
+                display: none;
+            }
+        }
+
+
+        .form-text {
+            margin-bottom: 15px;
+
+
+
+            textarea {
+                height: 40px;
+                border-radius: 4px;
+                resize: vertical;
+                border: 1px solid $light-grey;
+            }
+        }
+
+        button {
+            margin-top: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

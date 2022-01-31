@@ -1,0 +1,224 @@
+.checkout{
+    .checkout-card{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 50px 0;
+        @include mobile{
+            margin-top: 0;
+        }
+        .checkout-card__list{
+            .list-title{
+                background-color: $green;
+                border-radius: 5px;
+                padding: 10px 20px;
+                @include mobile{
+                    text-align: center;
+                }
+                h3{
+                    margin: 0;
+                    text-transform: uppercase;
+                    color: $white;
+                    font-size: 20px;
+                }
+            }
+            .list-item__card{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include mobile{
+                    flex-direction: column;
+                    border: 1px solid $green;
+                    border-radius: 5px;
+                }
+                .list-item__card_img{
+                    width: 100px;
+                }
+                .list-item__card_product{
+                    margin: 20px;
+                }
+                .list-item__card_quantity{
+                    margin: 20px;
+                    display: flex;
+                    width: 200px;
+                    .quantity-sum{
+                        display: flex;
+                        border: 1px $green solid;
+                        padding: 0;
+                        border-radius: 5px;
+                    }
+                    button{
+                        color: $white;
+                        background-color: $green;
+                        padding: 10px 20px;
+                        margin: 5px;
+                        border-radius: 5px;
+
+                    }
+                    input{
+                        color: $green;
+                        text-align: center;
+                        width: 50px;
+                    }
+                }
+                .list-item__card_price, .list-item__card_total{
+                    margin: 20px;
+                    p{
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $green;
+                    }
+                }
+                .list-item__card_total{
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .checkout-customer{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        .customer-title{
+            background-color: $green;
+            border-radius: 5px;
+            padding: 10px 20px;
+            @include mobile{
+                text-align: center;
+            }
+            h3{
+                margin: 0;
+                text-transform: uppercase;
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        .customer-form{
+            .form-title{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+            .form-input{
+                padding: 12px 14px;
+                border: 1px solid #ACADC0;
+                box-sizing: border-box;
+                color: #C4C4C4;
+                font-size: 14px;
+            }
+            textarea{
+                margin-top: 15px;
+            }
+        }
+    }
+    .checkout-message{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 50px;
+        .customer-title{
+            background-color: $green;
+            border-radius: 5px;
+            padding: 10px 20px;
+            @include mobile{
+                text-align: center;
+            }
+            h3{
+                margin: 0;
+                text-transform: uppercase;
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        .customer-form{
+            .form-title{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+            .form-input{
+                padding: 12px 14px;
+                border: 1px solid #ACADC0;
+                box-sizing: border-box;
+                color: #C4C4C4;
+                font-size: 14px;
+            }
+            textarea{
+                margin-top: 15px;
+            }
+        }
+    }
+    .checkout-delivery{
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 50px;
+        .customer-title{
+            background-color: $green;
+            border-radius: 5px;
+            padding: 10px 20px;
+            @include mobile{
+                text-align: center;
+            }
+            h3{
+                margin: 0;
+                text-transform: uppercase;
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        .customer-form{
+            .form-title{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+
+        }
+        .checkout-type{
+            div{
+                display: flex;
+                padding-top: 10px;
+                align-items: center;
+            }
+            input[type="radio"]{
+                width: 15px;
+                display: inline-block;
+            }
+            p{
+                margin: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+    .checkout-btn{
+        border: 1px solid $lt-green;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        color: $lt-green;
+        width: 100%;
+        padding: 16px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+        transition: .3s;      
+        &:hover{
+            background-color: $lt-green;
+            color: $white;
+        }
+        @include mobile{
+            margin-top: 20px;
+        }
+    }
+}

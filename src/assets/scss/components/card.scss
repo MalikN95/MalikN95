@@ -1,0 +1,307 @@
+.card {
+    position: relative;
+    padding: 15px 10px 20px;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+
+
+    &-special {
+        background-color: $yellow;
+        border-radius: 35px;
+        font-size: 12px;
+        padding: 5px 10px;
+        position: absolute;
+        top: 15px;
+        margin-left: 10px;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    &-image {
+        margin-top: 15px;
+
+        img {
+            width: 188px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &-price {
+        margin-top: 20px;
+
+        &__new {
+            font-size: 22px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        &__old {
+            font-size: 14px;
+            font-weight: 400;
+            color: $light-grey;
+            text-decoration: line-through;
+        }
+    }
+
+    &-rating {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            margin-right: 5px;
+
+            &>li>img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &__reviews {
+            font-size: 12px;
+            color: $light-grey;
+
+        }
+    }
+
+    &-title {
+        margin-top: 8px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: 40px;
+        overflow: hidden;
+        color: $black;
+
+        a {
+            color: $black;
+        }
+    }
+
+    &-actions {
+        margin-top: 5px;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        transition: 0.2s ease-out;
+        @include tablet{
+            justify-content: start !important;
+        }
+
+        &__now {
+            padding: 9px 14px;
+            color: $orange;
+            border: 1px solid $orange;
+            background-color: transparent;
+            margin: 0 10px;
+
+
+            &:hover {
+                border-color: $light-orange;
+                background-color: transparent;
+            }
+
+            &:focus {
+                border: 1px solid $orange;
+
+            }
+        }
+
+        &__add img {
+            margin: 0;
+        }
+
+
+
+        &__wish {
+
+            @include mobile {
+                margin-left: 15px;
+            }
+            @include tablet {
+                margin-left: 15px !important;
+            }
+
+            width: 24px;
+
+            &>svg {
+                transition: 300ms;
+            }
+
+
+            &>svg:hover {
+                stroke: $light-orange;
+            }
+        }
+
+        &__add:focus {
+            background-color: $orange;
+        }
+
+
+    }
+
+    &:hover &-actions {
+        opacity: 1;
+    }
+
+    &:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    }
+
+}
+
+.card-desctop {
+    display: block;
+}
+
+.card-mobile {
+    display: none;
+}
+
+.wish-card {
+    .card-actions {
+        justify-content: start;
+    }
+
+    .card-actions__wish {
+        margin: 0;
+    }
+
+    .card-actions__now {
+        margin: 0 14px;
+    }
+}
+
+.catalog-card {
+
+    // .card-actions {
+    //     justify-content: space-between;
+    // }
+
+    .card-actions__wish {
+        margin: 0 !important;
+    }
+
+    .card-actions__now {
+        margin: 0 14px;
+    }
+}
+
+.wish-card {
+    .card-actions {
+        justify-content: start;
+    }
+
+    .card-actions__wish {
+        margin: 0;
+    }
+
+    .card-actions__now {
+        margin: 0 14px;
+    }
+}
+
+@include mobile {
+    .card-desctop {
+        display: none;
+    }
+
+    .card-mobile {
+        display: block;
+        border-radius: 0 !important;
+        border-bottom: 1px solid rgba(53, 51, 51, 0.05);
+
+        .card {
+            border-radius: 0 !important;
+        }
+
+        .content {
+            display: flex;
+
+            .description {
+                padding-left: 21px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul li {
+                list-style: none;
+                margin-bottom: 6px;
+            }
+
+            li img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .card-price {
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+
+        .card-rating {
+            flex-direction: column;
+        }
+
+        .card-image img {
+            width: 93px;
+        }
+
+        .card-actions {
+            justify-content: start;
+        }
+
+        .card-actions__now {
+            display: block;
+            margin: 0 14px;
+        }
+    }
+}
+
+@include mobile {
+
+    .product-section {
+        .card-actions__wish {
+            margin-left: 15px;
+        }
+    }
+
+    .card {
+
+
+        &-price {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-actions {
+            opacity: 1;
+
+            &__now {
+                display: none;
+            }
+
+            &__add img {
+                margin: 0;
+            }
+
+            &__add>span {
+                display: none;
+            }
+        }
+
+        &-rating__reviews span {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+.our-advantages {
+
+
+
+    &-card {
+        display: flex;
+        margin-bottom: 40px;
+
+        img {
+            width: 88px;
+            margin-right: 20px;
+        }
+
+        &__text {
+            h4 {
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

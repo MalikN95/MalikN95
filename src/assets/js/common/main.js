@@ -1,7 +1,12 @@
+
+import { MDCSlider } from "@material/slider";
+import Swiper from "./../libs/swiper";
+import $ from "jquery";
+const slider = new MDCSlider(document.querySelector('.mdc-slider'));
+
 $(document).ready(function () {
   let $preloader = $("#page-preloader");
   $preloader.fadeOut(1000);
-
   /* $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 30) {
@@ -183,5 +188,6 @@ $(document).ready(function () {
     thumbs: {
       swiper: swiper1,
     },
-  })
+  });
+  
 });

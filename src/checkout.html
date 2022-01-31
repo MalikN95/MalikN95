@@ -1,0 +1,159 @@
+---
+layout: default
+title: Оформление заказа
+---
+{{> mob-breadcrumb}}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+                <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+                <span>Оформление заказа</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="checkout">
+    <div class="container">
+        <div class="checkout-card">
+            <div class="checkout-card__list">
+                <div class="list-title"><h3>Список товаров</h3> </div>
+                <div class="list-item">
+                    <div class="list-item__card">
+                        <img class="list-item__card_img" src="assets/images/card-img.jpg" alt="">
+                        <p class="list-item__card_product">Фанера ФК 3 мм 1525х1525, сорт 4/4, нешлифованная, берёза</p>
+                        <div class="list-item__card_quantity">
+                            <div class="quantity-sum">
+                                <button>-</button>
+                                <input type="text" value="1">
+                                <button>+</button>
+                            </div>
+                            <button>X</button>
+                        </div>
+                        <div class="preice">
+                            <div class="list-item__card_price">
+                                <p>Цена: <span>5000</span>р.</p>
+                            </div>
+                            <div class="list-item__card_total">
+                                <p>Итого: <span>5000</span>р.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__card">
+                        <img class="list-item__card_img" src="assets/images/card-img.jpg" alt="">
+                        <p class="list-item__card_product">Фанера ФК 3 мм 1525х1525, сорт 4/4, нешлифованная, берёза</p>
+                        <div class="list-item__card_quantity">
+                            <div class="quantity-sum">
+                                <button>-</button>
+                                <input type="text" value="1">
+                                <button>+</button>
+                            </div>
+                            <button>X</button>
+                        </div>
+                        <div class="preice">
+                            <div class="list-item__card_price">
+                                <p>Цена: <span>5000</span>р.</p>
+                            </div>
+                            <div class="list-item__card_total">
+                                <p>Итого: <span>5000</span>р.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__card">
+                        <img class="list-item__card_img" src="assets/images/card-img.jpg" alt="">
+                        <p class="list-item__card_product">Фанера ФК 3 мм 1525х1525, сорт 4/4, нешлифованная, берёза</p>
+                        <div class="list-item__card_quantity">
+                            <div class="quantity-sum">
+                                <button>-</button>
+                                <input type="text" value="1">
+                                <button>+</button>
+                            </div>
+                            <button>X</button>
+                        </div>
+                        <div class="preice">
+                            <div class="list-item__card_price">
+                                <p>Цена: <span>5000</span>р.</p>
+                            </div>
+                            <div class="list-item__card_total">
+                                <p>Итого: <span>5000</span>р.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="checkout-customer">
+                    <div class="customer-title">
+                        <h3>Покупатель</h3>
+                    </div>
+                    <form action="" class="customer-form">
+                        <p class="form-title">
+                            Ваше имя
+                        </p>
+                        <input type="text" class="form-input" placeholder="Иван Иванов">
+                        <p class="form-title">
+                            E-mail
+                        </p>
+                        <input type="mail" class="form-input" placeholder="example@mail.ru">
+                        <p class="form-title">
+                            Телефон
+                        </p>
+                        <input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                        <p class="form-title">
+                            Регион
+                        </p>
+                        <input type="mail" class="form-input" placeholder="Регион">
+                        <p class="form-title">
+                            Город
+                        </p>
+                        <input type="mail" class="form-input" placeholder="Город">
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="checkout-message">
+                    <div class="customer-title">
+                        <h3>Комментарий</h3>
+                    </div>
+                    <form action="" class="customer-form">
+                        <textarea rows="9" class="form-input" placeholder="Введите ваш комментарий"></textarea>
+                    </form>
+                </div>
+                <div class="checkout-delivery">
+                    <div class="customer-title">
+                        <h3>Способ доставки</h3>
+                    </div>
+                    <div class="checkout-type">
+                        <div class="checkout-type__block">
+                            <input type="radio" class="delivery-check"> 
+                            <p>Самовывоз из магазина - 0 руб.</p>
+                        </div>
+                        <div class="checkout-type__block">
+                            <input type="radio" class="delivery-check"> 
+                            <p>Доставка (индивидуальный расчет)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="checkout-btn">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

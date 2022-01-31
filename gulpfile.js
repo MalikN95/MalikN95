@@ -19,6 +19,12 @@ const prettyHtml = require("gulp-pretty-html");
 const ttf2woff = require("gulp-ttf2woff");
 const ttf2woff2 = require("gulp-ttf2woff2");
 
+
+const rollup = require('gulp-better-rollup');
+const babel = require('rollup-plugin-babel');
+const resolve = require('rollup-plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
+
 /* Paths */
 const srcPath = "src/";
 const distPath = "dist/";
@@ -159,6 +165,7 @@ function cssWatch(cb) {
 
 function js(cb) {
   return src(path.src.js, { base: srcPath + "assets/js/" })
+  
     .pipe(
       plumber({
         errorHandler: function (err) {
@@ -170,6 +177,8 @@ function js(cb) {
         },
       })
     )
+    .pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
+      // .pipe(gulp.dest('dist/'));
     .pipe(fileinclude())
     .pipe(uglify())
 
@@ -192,6 +201,8 @@ function jsWatch(cb) {
         },
       })
     )
+    .pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
+
     .pipe(fileinclude())
     .pipe(uglify())
     .pipe(dest(path.build.js))
