@@ -29,6 +29,7 @@
         "IE 10"
     ],
     "dependencies": {
+        "@material/slider": "^13.0.0",
         "gulp-cli": "^2.3.0",
         "gulp-update": "^0.0.2"
     }

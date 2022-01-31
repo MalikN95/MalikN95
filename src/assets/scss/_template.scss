@@ -217,6 +217,9 @@ button {
     position: relative;
     z-index: 5;
     margin: 20px 0 40px 0;
+    @include mobile{
+        display: none;
+    }
     .breadcrumbs__list-item {
         display: inline-block;
         padding-right: 20px;
@@ -250,6 +253,27 @@ button {
             top: 2px;
             right: 4px;
         }
+    }
+}
+.mob-bteadcrumbs{
+    display: none;
+    padding: 15px 0 45px;
+    a{
+        font-weight: 500;
+        font-size: 14px;
+        color: #6B6B6B;
+        margin-left: 35px;
+        position: relative;
+        &::before{
+            content: url(/assets/images/icons/brc-arr.svg);
+            position: absolute;
+            top: -3px;
+            left: -30px;
+        }
+    }
+
+    @include mobile{
+        display: block;
     }
 }
 

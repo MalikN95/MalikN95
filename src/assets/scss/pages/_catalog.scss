@@ -163,11 +163,38 @@
             text-align: left;
             outline: none;
             transition: 0.4s;
+            position: relative;
+            span{
+                text-align: right;
+                font-weight: 400;
+                font-size: 13px; 
+                color: #ACADC0;
+                position: absolute;
+                top: 13px;
+                right: 25px;
+            }
+        }
+        .section-link{
+            position: relative;
+            span{
+                text-align: right;
+                font-weight: 400;
+                font-size: 13px; 
+                color: #ACADC0;
+                position: absolute;
+                top: 1px;
+                right: 25px;
+            }
         }
         .active{
             color: $bl-green;
             font-weight: 600;
             transition: .2s;
+            span{
+                color: $bl-green;
+                font-weight: 600;
+                transition: .2s;
+            }
         }
         .accordion:after {
             content: url(/assets/images/icons/footer-arrow.svg);
@@ -188,6 +215,7 @@
             overflow: hidden;
             background: none;
         }
+
     }
     .catalog-cards{
         width: 76%;
@@ -195,6 +223,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+            justify-content: space-between;
         }
         .item__card{
            
@@ -281,5 +310,10 @@
                 color: $white;
             }
         }
+    }
+}
+.catalog{
+    .sort-category{
+        margin-right: 5px;
     }
 }
