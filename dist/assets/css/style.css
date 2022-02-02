@@ -857,16 +857,18 @@ button {
       width: 100%;
       text-align: left;
       outline: none;
-      transition: 0.4s; }
+      transition: 0.4s;
+      font-weight: 600;
+      font-size: 15px; }
     .footer .footer-mob-content .footer-mob-section .footer-mob__accordion .accordion:after {
       content: url(/assets/images/icons/footer-arrow.svg);
       font-size: 20px;
       color: #1E1E1E;
-      float: right;
       margin-left: 5px;
-      transition: .3s; }
+      transition: .3s;
+      display: inline-block; }
     .footer .footer-mob-content .footer-mob-section .footer-mob__accordion .active:after {
-      transform: rotateZ(-180deg) translateY(-5px); }
+      transform: rotateX(-180deg) translateY(-6px); }
     .footer .footer-mob-content .footer-mob-section .footer-mob__accordion .panel {
       display: none;
       overflow: hidden;
