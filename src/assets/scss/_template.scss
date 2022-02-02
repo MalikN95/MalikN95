@@ -277,7 +277,7 @@ button {
     }
 }
 
-.sort-category{
+.sort-category, .sort-category-mob{
     display: flex;
     justify-content: flex-end;
     @include mobile{
@@ -302,6 +302,23 @@ button {
         }
     }
     
+}
+.sort-category{
+    margin-right: 5px;
+    @include mobile{
+        display: none;
+    }
+}
+
+.sort-category-mob{
+    display: none;
+    margin-right: 5px;
+    margin-top: 30px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    @include mobile{
+        display: flex;
+    }
 }
 .page-block{
     width: 340px;

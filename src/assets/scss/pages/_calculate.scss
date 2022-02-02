@@ -76,8 +76,39 @@
                 padding: 50px 0;
                 width: 500px;
                 position: relative;
+
                 
             }
+        }
+    }
+    .mdc-slider {
+        margin: 0 10px;
+    
+        input {
+            padding: 0;
+        }
+    
+        & .mdc-slider__thumb::before,
+        & .mdc-slider__thumb::after {
+            background-color: transparent;
+        }
+    
+        .mdc-slider__thumb-knob {
+            background-color: $green !important;
+            border: 2px solid $green !important;
+        }
+    
+        .mdc-slider__track--inactive {
+            background: rgba(60, 60, 67, 0.18);
+        }
+    
+        .mdc-slider__track--active {
+            height: 4px;
+        }
+    
+        .mdc-slider__track--active_fill {
+            background-color: $green !important;
+            border-color: $green !important;
         }
     }
 }
