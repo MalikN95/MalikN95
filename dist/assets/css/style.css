@@ -1900,7 +1900,7 @@ button {
       margin-bottom: 30px;
       position: relative;
       display: flex; }
-      .calculat .calculat-form .calculat-form__block .form-range .js-price-to {
+      .calculat .calculat-form .calculat-form__block .form-range .js-price1, .calculat .calculat-form .calculat-form__block .form-range .js-price2, .calculat .calculat-form .calculat-form__block .form-range .js-price3 {
         padding: 14px;
         border: 1px solid #27AE60;
         border-radius: 5px;

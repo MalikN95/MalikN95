@@ -36,6 +36,36 @@ $(document).ready(function () {
       }
     });
   };
+  let CalcSlider1 = document.querySelector(" .mdc-calc1");
+  if (rangeMDCSlider) {
+    const slider = new MDCSlider(CalcSlider1);
+    slider.root.addEventListener("MDCSlider:change", (e) => {
+      const details = e.detail;
+      if (details.thumb == 2) {
+        $(".js-price1").val(toDivide(details.value));
+      }
+    });
+  };
+  let CalcSlider2 = document.querySelector(" .mdc-calc2");
+  if (rangeMDCSlider) {
+    const slider = new MDCSlider(CalcSlider2);
+    slider.root.addEventListener("MDCSlider:change", (e) => {
+      const details = e.detail;
+      if (details.thumb == 2) {
+        $(".js-price2").val(toDivide(details.value));
+      }
+    });
+  };
+  let CalcSlider3 = document.querySelector(" .mdc-calc3");
+  if (rangeMDCSlider) {
+    const slider = new MDCSlider(CalcSlider3);
+    slider.root.addEventListener("MDCSlider:change", (e) => {
+      const details = e.detail;
+      if (details.thumb == 2) {
+        $(".js-price3").val(toDivide(details.value));
+      }
+    });
+  };
 
   /* $(window).scroll(function () {
     var scroll = $(window).scrollTop();
