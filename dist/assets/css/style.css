@@ -1951,6 +1951,9 @@ button {
   margin: 0 20px 0 40px;
   width: 100%;
   transform: translateY(10px); }
+  @media screen and (max-width: 576px) {
+    .calculat .mdc-slider {
+      margin: 0; } }
   .calculat .mdc-slider input {
     padding: 0; }
   .calculat .mdc-slider .mdc-slider__thumb::before,
