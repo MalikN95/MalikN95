@@ -141,6 +141,7 @@
                 font-weight: 400;
                 transition: .1s;
                 border-bottom: 2px solid transparent;
+                white-space: nowrap;
                 &:hover{
                     border-bottom: 2px solid $green;
                 }

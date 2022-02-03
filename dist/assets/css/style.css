@@ -1603,11 +1603,13 @@ button {
           text-align: center; }
       .item .item-card .item-card-info .item-buy .item-type {
         display: flex;
-        align-items: center;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-        transform: translateY(-50px); }
+        align-items: center; }
+        @media screen and (max-width: 576px) {
+          .item .item-card .item-card-info .item-buy .item-type {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            transform: translateY(-50px); } }
         .item .item-card .item-card-info .item-buy .item-type .item-type__category {
           border: none;
           outline: none;
@@ -1668,7 +1670,8 @@ button {
       font-size: 17px;
       font-weight: 400;
       transition: .1s;
-      border-bottom: 2px solid transparent; }
+      border-bottom: 2px solid transparent;
+      white-space: nowrap; }
       @media screen and (max-width: 576px) {
         .item .item-info .item-info__tabs .tabs-button {
           font-size: 14px;
@@ -2199,7 +2202,8 @@ button {
       font-size: 17px;
       font-weight: 400;
       transition: .1s;
-      border-bottom: 2px solid transparent; }
+      border-bottom: 2px solid transparent;
+      white-space: nowrap; }
       .bath-card-section .item-info .item-info__tabs .tabs-button:hover {
         border-bottom: 2px solid #219653; }
       @media screen and (max-width: 576px) {

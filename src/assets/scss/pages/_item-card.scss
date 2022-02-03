@@ -112,10 +112,13 @@
                 .item-type{
                     display: flex;
                     align-items: center;
-                    position: absolute;
-                    right: 30px;
-                    top: 10px;
-                    transform: translateY(-50px);
+                    @include mobile{
+                        position: absolute;
+                        right: 30px;
+                        top: 10px;
+                        transform: translateY(-50px);
+                    }
+
                     .item-type__category{
                         border: none;
                         outline: none;
@@ -191,6 +194,7 @@
                 font-weight: 400;
                 transition: .1s;
                 border-bottom: 2px solid transparent;
+                white-space: nowrap;
                 @include mobile{
                     font-size: 14px;
                     margin-right: 30px;
