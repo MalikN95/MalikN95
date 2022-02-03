@@ -282,13 +282,6 @@ button {
   width: 300px;
   margin: 10px;
   position: relative; }
-  .item__card::after {
-    content: url(/assets/images/icons/card-fovirit.svg);
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    transition: .3s; }
   .item__card .card__item-name {
     color: #1E1E1E;
     font-weight: normal;
@@ -312,6 +305,20 @@ button {
       cursor: pointer; }
       .item__card .card-price .trash img {
         border-radius: 5px; }
+  .item__card .item__card_fav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: .3s;
+    width: 25px;
+    height: 25px;
+    transition: .3s; }
+    .item__card .item__card_fav:hover {
+      fill: #219653;
+      transform: scale(1.1); }
+  .item__card .active-fav {
+    fill: #219653; }
 
 .show-btn {
   border: 1px solid #27AE60;
@@ -766,12 +773,24 @@ button {
           color: #ACADC0;
           padding: 13px;
           box-sizing: border-box; }
+        .header .header-mobile .header-bottom .search button {
+          display: block;
+          background-color: #27AE60;
+          padding: 0 40px;
+          height: 49px;
+          position: absolute;
+          width: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          border-bottom-right-radius: 5px;
+          border-top-right-radius: 5px; }
         .header .header-mobile .header-bottom .search img {
           position: absolute;
           width: 24px;
           top: 50%;
-          right: 13px;
-          transform: translateY(-50%); }
+          right: 50%;
+          transform: translate(10px, -50%); }
 
 .footer {
   margin-top: 140px;

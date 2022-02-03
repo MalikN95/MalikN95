@@ -149,15 +149,7 @@ button {
     padding: 20px 30px;
     width: 300px;
     margin: 10px;
-    position: relative;
-    &::after{
-        content: url(/assets/images/icons/card-fovirit.svg);
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        cursor: pointer;
-        transition: .3s;
-    }
+    position: relative; 
     
     .card__item-name{
         color: $black;
@@ -188,6 +180,24 @@ button {
                 border-radius: 5px;
             }  
         }
+    }
+    .item__card_fav{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        transition: .3s;
+        width: 25px;
+        height: 25px;
+        transition: .3s;
+        &:hover{
+            fill: #219653;
+            transform: scale(1.1);
+        }
+
+    }  
+    .active-fav{
+        fill: #219653;
     }
 }
 .show-btn{

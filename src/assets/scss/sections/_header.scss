@@ -386,12 +386,25 @@
                     box-sizing: border-box;
                     
                 }
+                button{
+                    display: block;
+                    background-color: $lt-green;
+                    padding: 0 40px;
+                    height: 49px;
+                    position: absolute;
+                    width: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
                 img{
                     position: absolute;
                     width: 24px;
                     top: 50%;
-                    right: 13px;
-                    transform: translateY(-50%);
+                    right: 50%;
+                    transform: translate(10px, -50%);
                 }
             }
         }

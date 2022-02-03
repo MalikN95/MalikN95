@@ -166,6 +166,9 @@ $(document).ready(function () {
     });
   });
 
+  $(".item__card_fav").on("click", function () {
+    $(this).toggleClass("active-fav");
+  });
   $(".catalog-category__item").on("click", function () {
     $(this).addClass("active");
     $(this).siblings().removeClass("active");
@@ -194,7 +197,7 @@ $(document).ready(function () {
   $(".product-info__btn_continue").each(function () {
     $(this).on("click", function () {
       $(".product-popup").removeClass("popup-active");
-    });
+  });
   });
 
   let swiper1 = new Swiper(".bath-card-thum", {
