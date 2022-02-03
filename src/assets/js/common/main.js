@@ -186,6 +186,11 @@ $(document).ready(function () {
       $(".product-popup").addClass("popup-active");
     });
   });
+  $(".product-popup").each(function () {
+    $(this).on("click", function () {
+      $(".product-popup").removeClass("popup-active");
+    });
+  });
   $(".product-info__btn_continue").each(function () {
     $(this).on("click", function () {
       $(".product-popup").removeClass("popup-active");

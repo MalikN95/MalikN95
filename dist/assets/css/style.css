@@ -1551,8 +1551,9 @@ button {
       font-size: 14px;
       font-weight: 400; }
     .item .item-card .item-card-info .item-buy {
-      margin-top: 35px;
-      display: flex; }
+      margin-top: 30px;
+      display: flex;
+      position: relative; }
       .item .item-card .item-card-info .item-buy .trash {
         color: #fff;
         font-weight: bold;
@@ -1583,7 +1584,11 @@ button {
           text-align: center; }
       .item .item-card .item-card-info .item-buy .item-type {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        transform: translateY(-50px); }
         .item .item-card .item-card-info .item-buy .item-type .item-type__category {
           border: none;
           outline: none;

@@ -73,8 +73,9 @@
                 font-weight: 400;
             }
             .item-buy{
-                margin-top: 35px;
+                margin-top: 30px;
                 display: flex;
+                position: relative;
                 .trash{
                     color: $white;
                     font-weight: bold;
@@ -111,6 +112,10 @@
                 .item-type{
                     display: flex;
                     align-items: center;
+                    position: absolute;
+                    right: 30px;
+                    top: 10px;
+                    transform: translateY(-50px);
                     .item-type__category{
                         border: none;
                         outline: none;
