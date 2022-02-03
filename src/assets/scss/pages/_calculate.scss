@@ -4,15 +4,29 @@
         display: flex;
         box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
+        @include mobile{
+            flex-direction: column;
+        }
         .calculat-form__img{
             width: 35%;
+            @include mobile{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
             img{
                 height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
             }
         }
         .calculat-form__block{
             padding: 50px 70px;
             width: 100%;
+            @include mobile{
+                padding: 40px;
+            }
             .calculat-form__item{
                 display: flex;
                 justify-content: space-between;
@@ -36,7 +50,11 @@
                 .form-range{
                     width: 100%;
                     align-items: center;
-
+                    @include mobile{
+                        flex-direction: column;
+                        border-bottom: 1px solid #E3E3E3;
+                        padding-bottom: 40px;
+                    }
                     .range{
                         -webkit-appearance: none;
                         background: $lt-green;
@@ -89,6 +107,9 @@
             display: flex;
             margin-left: 150px;
             justify-content: space-between;
+            @include mobile{
+                margin-left: 0;
+            }
             p{
                 font-size: 14px;
                 font-weight: 400;
@@ -100,6 +121,9 @@
                 width: 140px;
                 padding: 12px;
                 text-align: center;
+                @include mobile{
+                    width: 76px;
+                }
             }
         }
     }
@@ -162,6 +186,9 @@
                 font-size: 20px;
                 display: block;
             }
+        }
+        .long{
+            transform: translate(26px, 8px); 
         }
     }
 }

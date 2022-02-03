@@ -1843,13 +1843,27 @@ button {
   display: flex;
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px; }
+  @media screen and (max-width: 576px) {
+    .calculat .calculat-form {
+      flex-direction: column; } }
   .calculat .calculat-form .calculat-form__img {
     width: 35%; }
+    @media screen and (max-width: 576px) {
+      .calculat .calculat-form .calculat-form__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; } }
     .calculat .calculat-form .calculat-form__img img {
-      height: 100%; }
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
   .calculat .calculat-form .calculat-form__block {
     padding: 50px 70px;
     width: 100%; }
+    @media screen and (max-width: 576px) {
+      .calculat .calculat-form .calculat-form__block {
+        padding: 40px; } }
     .calculat .calculat-form .calculat-form__block .calculat-form__item {
       display: flex;
       justify-content: space-between;
@@ -1869,6 +1883,11 @@ button {
       .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range {
         width: 100%;
         align-items: center; }
+        @media screen and (max-width: 576px) {
+          .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range {
+            flex-direction: column;
+            border-bottom: 1px solid #E3E3E3;
+            padding-bottom: 40px; } }
         .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range {
           -webkit-appearance: none;
           background: #27AE60;
@@ -1911,6 +1930,9 @@ button {
     display: flex;
     margin-left: 150px;
     justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .calculat .calculat-form .total-calculate {
+        margin-left: 0; } }
     .calculat .calculat-form .total-calculate p {
       font-size: 14px;
       font-weight: 400; }
@@ -1921,6 +1943,9 @@ button {
       width: 140px;
       padding: 12px;
       text-align: center; }
+      @media screen and (max-width: 576px) {
+        .calculat .calculat-form .total-calculate input {
+          width: 76px; } }
 
 .calculat .mdc-slider {
   margin: 0 20px 0 40px;
@@ -1966,6 +1991,8 @@ button {
       font-weight: 700;
       font-size: 20px;
       display: block; }
+  .calculat .mdc-slider .long {
+    transform: translate(26px, 8px); }
 
 .bath .catalog-category .catalog-category__item {
   padding: 11px 20px;
