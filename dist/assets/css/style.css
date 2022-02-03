@@ -1868,7 +1868,7 @@ button {
           text-align: center; }
       .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range {
         width: 100%;
-        margin-left: 40px; }
+        align-items: center; }
         .calculat .calculat-form .calculat-form__block .calculat-form__item .form-range .range {
           -webkit-appearance: none;
           background: #27AE60;
@@ -1896,14 +1896,36 @@ button {
           position: absolute;
           top: 5px;
           right: -3px; }
-    .calculat .calculat-form .calculat-form__block .new {
-      margin-top: 50px;
-      padding: 50px 0;
-      width: 500px;
-      position: relative; }
+    .calculat .calculat-form .calculat-form__block .form-range {
+      margin-bottom: 30px;
+      position: relative;
+      display: flex; }
+      .calculat .calculat-form .calculat-form__block .form-range .js-price-to {
+        padding: 14px;
+        border: 1px solid #27AE60;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 120px; }
+  .calculat .calculat-form .total-calculate {
+    display: flex;
+    margin-left: 150px;
+    justify-content: space-between; }
+    .calculat .calculat-form .total-calculate p {
+      font-size: 14px;
+      font-weight: 400; }
+    .calculat .calculat-form .total-calculate input {
+      border: 1px solid #ACADC0;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 140px;
+      padding: 12px;
+      text-align: center; }
 
 .calculat .mdc-slider {
-  margin: 0 10px; }
+  margin: 0 20px 0 40px;
+  width: 100%;
+  transform: translateY(10px); }
   .calculat .mdc-slider input {
     padding: 0; }
   .calculat .mdc-slider .mdc-slider__thumb::before,
@@ -1913,12 +1935,37 @@ button {
     background-color: #219653 !important;
     border: 2px solid #219653 !important; }
   .calculat .mdc-slider .mdc-slider__track--inactive {
-    background: rgba(60, 60, 67, 0.18); }
+    background: #219653 !important;
+    opacity: 1; }
   .calculat .mdc-slider .mdc-slider__track--active {
     height: 4px; }
   .calculat .mdc-slider .mdc-slider__track--active_fill {
     background-color: #219653 !important;
     border-color: #219653 !important; }
+  .calculat .mdc-slider .start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #6B6B6B;
+    font-size: 12px;
+    transform: translate(-4px, 8px); }
+    .calculat .mdc-slider .start span {
+      color: #219653;
+      font-weight: 700;
+      font-size: 20px;
+      display: block; }
+  .calculat .mdc-slider .end {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #6B6B6B;
+    font-size: 12px;
+    transform: translate(18px, 8px); }
+    .calculat .mdc-slider .end span {
+      color: #219653;
+      font-weight: 700;
+      font-size: 20px;
+      display: block; }
 
 .bath .catalog-category .catalog-category__item {
   padding: 11px 20px;

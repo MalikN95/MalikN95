@@ -35,7 +35,7 @@ $(document).ready(function () {
         $(".js-price-to").val(toDivide(details.value));
       }
     });
-  }
+  };
 
   /* $(window).scroll(function () {
     var scroll = $(window).scrollTop();

@@ -35,7 +35,7 @@
                 }
                 .form-range{
                     width: 100%;
-                    margin-left: 40px;
+                    align-items: center;
 
                     .range{
                         -webkit-appearance: none;
@@ -71,19 +71,42 @@
                     
                 }
             }
-            .new{
-                margin-top: 50px;
-                padding: 50px 0;
-                width: 500px;
+            .form-range{
+                margin-bottom: 30px;
                 position: relative;
-
-                
+                display: flex;
+                .js-price-to{
+                    padding: 14px;
+                    border: 1px solid $lt-green;
+                    border-radius: 5px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    width: 120px;
+                }
+            }
+        }
+        .total-calculate{
+            display: flex;
+            margin-left: 150px;
+            justify-content: space-between;
+            p{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            input{
+                border: 1px solid #ACADC0;
+                box-sizing: border-box;
+                border-radius: 5px;
+                width: 140px;
+                padding: 12px;
+                text-align: center;
             }
         }
     }
     .mdc-slider {
-        margin: 0 10px;
-    
+        margin: 0 20px 0 40px;
+        width: 100%;
+        transform: translateY(10px);
         input {
             padding: 0;
         }
@@ -99,16 +122,46 @@
         }
     
         .mdc-slider__track--inactive {
-            background: rgba(60, 60, 67, 0.18);
+            background: $green !important;
+            opacity: 1;
         }
     
         .mdc-slider__track--active {
             height: 4px;
+
         }
     
         .mdc-slider__track--active_fill {
             background-color: $green !important;
             border-color: $green !important;
+        }
+        .start{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #6B6B6B;
+            font-size: 12px;
+            transform: translate(-4px, 8px);
+            span{
+                color: $green;
+                font-weight: 700;
+                font-size: 20px;
+                display: block;
+            }
+        }
+        .end{
+            position: absolute;
+            top: 0;
+            right:0;
+            color: #6B6B6B;
+            font-size: 12px;
+            transform: translate(18px, 8px);
+            span{
+                color: $green;
+                font-weight: 700;
+                font-size: 20px;
+                display: block;
+            }
         }
     }
 }
