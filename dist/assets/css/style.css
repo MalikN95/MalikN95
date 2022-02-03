@@ -1471,6 +1471,9 @@ button {
         font-size: 14px;
         font-weight: 400; } }
     @media screen and (max-width: 576px) {
+      .catalog-wrapper .catalog-cards .item__card .item__card_fav {
+        display: none; } }
+    @media screen and (max-width: 576px) {
       .catalog-wrapper .catalog-cards {
         width: 100%; } }
     .catalog-wrapper .catalog-cards .bath-btn {

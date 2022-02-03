@@ -330,6 +330,11 @@
 
                 }
             }
+            .item__card_fav{
+                @include mobile{
+                    display: none;
+                }
+            }
         }
         @include mobile{
             width: 100%;
